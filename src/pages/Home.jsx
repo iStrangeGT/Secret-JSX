@@ -26,8 +26,8 @@ const Home = () => {
                 Growtopia
               </Link>
               <button className="px-4 py-2 rounded-full bg-blue-800 text-xs text-white hover:opacity-90 transition duration-300">
-                Get Started
-              </button>
+  <Link to="/dashboard">Get Started</Link>
+</button>
             </div>
             <div className="md:hidden">
               <button className="text-blue-800">
@@ -65,7 +65,7 @@ const Home = () => {
 </div>
 <div className="flex justify-center items-center mt-10">
   <button className="px-4 py-2 rounded-full bg-blue-800 text-xs text-white hover:opacity-90 transition duration-300">
-    Get Started
+  <Link to="/dashboard">Get Started</Link>
   </button>
 </div>
 
