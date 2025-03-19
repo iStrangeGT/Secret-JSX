@@ -6,7 +6,7 @@ const Home = () => {
       <>
 
 
-     <nav className="w-full backdrop-blur-md  bg-white/30  shadow-lg">
+     <nav className="fixed top-0 left-0 w-full backdrop-blur-md  bg-white/30  shadow-lg">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -50,7 +50,7 @@ const Home = () => {
         </div>
       </nav>
  
-<div className="sm:mt-48 mt-32 text-center">
+<div className=" mt-48 text-center">
 <h1 className="text-3xl font-bold text-blue-800">
   Welcome to SECRETSTORE!
 </h1>
