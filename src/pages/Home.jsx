@@ -57,13 +57,13 @@ const Home = () => {
 </div>
 <div className="mt-2 flex justify-center">
   <div className="text-center max-w-2xl">
-    <p className="text-gray-600 text-lg mt-2">
+    <p className="text-gray-600 text-lg mt-8">
       Hi Customers! We are here to provide a variety of server needs, such as game servers or web servers. We provide VPS, RDP, Growtopia Private Server Source, Coding Service, and more.
     </p>
   </div>
 
 </div>
-<div className="flex justify-center items-center mt-5">
+<div className="flex justify-center items-center mt-10">
   <button className="px-4 py-2 rounded-full bg-blue-800 text-xs text-white hover:opacity-90 transition duration-300">
     Get Started
   </button>
