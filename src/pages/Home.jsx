@@ -8,7 +8,8 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-        <span>SecretStore
+              <img src="/pelr.png" alt="" />
+        <span className="p-4 text-2xl text-blue-800">SECRETSTORE
         </span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
