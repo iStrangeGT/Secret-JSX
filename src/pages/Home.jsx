@@ -74,7 +74,7 @@ const Home = () => {
 <section>
   <div class="py-8 mt-44 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 class="mb-4 text-lg tracking-tight font-bold text-blue-800 ">GTPS Plans</h2>
+          <h2 class="mb-4 text-lg tracking-tight font-bold text-gray-500 ">GROWTOPIA PRIVATE SERVER HOSTING PLANS</h2>
       </div>
       <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center  text-blue-800  bg-white rounded-lg border border-gray-100 shadow">
