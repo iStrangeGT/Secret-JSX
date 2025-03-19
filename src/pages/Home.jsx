@@ -50,7 +50,7 @@ const Home = () => {
         </div>
       </nav>
  
-<div className="mt-32 text-center">
+<div className="sm:mt-48 mt-32 text-center">
 <h1 className="text-3xl font-bold text-blue-800">
   Welcome to SECRETSTORE!
 </h1>
