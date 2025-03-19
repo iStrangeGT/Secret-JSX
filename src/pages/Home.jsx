@@ -48,7 +48,7 @@ const Home = () => {
         </div>
       </nav>
 
-<div className="mt-10 text-center">
+<div className=" p-2 mt-10 text-center">
 <h1 className="text-2xl font-bold text-blue-800">
   Welcome to SecretStore!
 </h1>
