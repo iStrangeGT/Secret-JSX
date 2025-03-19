@@ -53,7 +53,7 @@ const Home = () => {
   Welcome to SecretStore!
 </h1>
 </div>
-<div className="mt-4 flex justify-center">
+<div className="mt-2 flex justify-center">
   <div className="text-center max-w-2xl">
     <p className="text-gray-600 mt-2">
       Hi Customers! We are here to provide a variety of server needs, such as game servers or web servers. We provide VPS, RDP, Growtopia Private Server Source, Coding Service, and more.
