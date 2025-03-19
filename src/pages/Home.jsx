@@ -61,11 +61,20 @@ const Home = () => {
       Hi Customers! We are here to provide a variety of server needs, such as game servers or web servers. We provide VPS, RDP, Growtopia Private Server Source, Coding Service, and more.
     </p>
   </div>
+
 </div>
+<div className="flex justify-center items-center mt-5">
+  <button className="px-4 py-2 rounded-full bg-blue-800 text-xs text-white hover:opacity-90 transition duration-300">
+    Get Started
+  </button>
+</div>
+
+
+
 <section>
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 class="mb-4 text-xl tracking-tight font-extrabold text-blue-800 ">Choose Your Plan</h2>
+          <h2 class="mb-4 text-xl tracking-tight font-extrabold text-blue-800 ">Growtopia Private Server Hosting Plan</h2>
       </div>
       <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow">
