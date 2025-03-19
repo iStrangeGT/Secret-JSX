@@ -3,24 +3,24 @@ import React from "react";
 
 const Home = () => {
     return (
-      <header>
+      <>
      <nav className="w-full backdrop-blur-md  bg-white/30  shadow-lg">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <img src="/pelr.png" alt="" />
-        <span className="p-4 text-2xl text-blue-800">SECRETSTORE
+        <span className="p-4 font-bold text-xl text-blue-800">SECRETSTORE
         </span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
           
-            <Link to="/hosting" className="text-gray-800 text-xs hover:text-purple-600 transition duration-300">
+            <Link to="/hosting" className="text-gray-600 text-xs hover:text-purple-600 transition duration-300">
             Hosting
               </Link>
-              <Link to="/product" className="text-gray-800 text-xs  hover:text-purple-600 transition duration-300">
+              <Link to="/product" className="text-gray-600 text-xs  hover:text-purple-600 transition duration-300">
                 Product
               </Link>
-              <Link to="/gtps-source" className="text-gray-800 text-xs hover:text-purple-600 transition duration-300">
+              <Link to="/gtps-source" className="text-gray-600 text-xs hover:text-purple-600 transition duration-300">
                 Growtopia
               </Link>
               <button className="px-4 py-2 rounded-full bg-blue-800 text-xs text-white hover:opacity-90 transition duration-300">
@@ -47,7 +47,16 @@ const Home = () => {
           </div>
         </div>
       </nav>
-      </header>
+
+<div className="mt-10 text-center">
+<h1 className="text-2xl font-bold text-blue-800">
+  Welcome to SecretStore!
+</h1>
+<p className="text-gray-600 mt-2">
+  Discover amazing products and services tailored for you.
+</p>
+</div>
+</>
     )
 }
 
