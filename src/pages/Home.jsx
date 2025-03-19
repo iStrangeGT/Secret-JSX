@@ -50,7 +50,7 @@ const Home = () => {
         </div>
       </nav>
  
-<div className="mt-28 text-center">
+<div className="mt-32 text-center">
 <h1 className="text-xl font-bold text-blue-800">
   Welcome to SECRETSTORE!
 </h1>
@@ -72,19 +72,19 @@ const Home = () => {
 
 
 <section>
-  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+  <div class="py-8 mt-44 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 class="mb-4 text-xl tracking-tight font-extrabold text-blue-800 ">Growtopia Private Server Hosting Plan</h2>
+          <h2 class="mb-4 text-lg tracking-tight font-bold text-blue-800 ">GTPS Plans</h2>
       </div>
       <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow">
-              <h3 class="mb-4 text-2xl font-semibold">Starter</h3>
-              <p class="font-light text-gray-500 sm:text-lg ">Best option for personal use & for your next project.</p>
+          <div class="flex flex-col p-6 mx-auto max-w-lg text-center  text-blue-800  bg-white rounded-lg border border-gray-100 shadow">
+              <h3 class="mb-4 text-xlfont-semibold">Starter</h3>
+              <p class="font-light text-gray-500 text-sm sm:text-lg ">Best option for personal use & for your next project.</p>
               <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-5xl font-extrabold">$29</span>
+                  <span class="mr-2 text-xl  text-yellow-700 font-extrabold">RP.300.000</span>
                   <span class="text-gray-500 ">/month</span>
               </div>
-              <ul role="list" class="mb-8 space-y-4 text-left">
+              <ul role="list" class="mb-8 text-blue-500 space-y-4 text-left">
                   <li class="flex items-center space-x-3">
                       <svg class="flex-shrink-0 w-5 h-5 text-green-500 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                       <span>Individual configuration</span>
@@ -108,14 +108,14 @@ const Home = () => {
               </ul>
               <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Get started</a>
           </div>
-          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow">
-              <h3 class="mb-4 text-2xl font-semibold">Company</h3>
+          <div class="flex flex-col p-6 mx-auto max-w-lg text-center  text-blue-800  bg-white rounded-lg border border-gray-100 shadow">
+              <h3 class="mb-4 text-xl font-semibold">Company</h3>
               <p class="font-light text-gray-500 sm:text-lg :text-gray-400">Relevant for multiple users, extended & premium support.</p>
               <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-5xl font-extrabold">$99</span>
+                  <span class="mr-2 text-xl  text-yellow-700 font-extrabold">RP.600.000</span>
                   <span class="text-gray-500">/month</span>
               </div>
-              <ul role="list" class="mb-8 space-y-4 text-left">
+              <ul role="list" class="mb-8 text-blue-500 space-y-4 text-left">
                   <li class="flex items-center space-x-3">
                       <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                       <span>Individual configuration</span>
@@ -140,13 +140,13 @@ const Home = () => {
               <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Get started</a>
           </div>
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-blue-800 bg-white rounded-lg border border-gray-100 shadow">
-              <h3 class="mb-4 text-2xl font-semibold">Enterprise</h3>
+              <h3 class="mb-4 text-xl font-semibold">Enterprise</h3>
               <p class="font-light text-gray-500 sm:text-lg">Best for large scale uses and extended redistribution rights.</p>
               <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-5xl font-extrabold">$499</span>
+                  <span class="mr-2 text-yellow-700 text-xl font-extrabold">RP.999.999</span>
                   <span class="text-gray-500">/month</span>
               </div>
-              <ul role="list" class="mb-8 space-y-4 text-left">
+              <ul role="list" class="mb-8 text-blue-500 space-y-4 text-left">
                   <li class="flex items-center space-x-3">
                       <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                       <span>Individual configuration</span>
