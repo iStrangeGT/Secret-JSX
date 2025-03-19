@@ -1,0 +1,13 @@
+
+@tailwind base; @tailwind components; @tailwind utilities;
+
+@layer base {
+  @font-face {
+      font-family: "publicpixel";
+      src: url(/fonts/PublicPixel.ttf) format('truetype');
+  };
+}
+
+body{
+  background-color:  rgb(224, 221, 214);
+}
