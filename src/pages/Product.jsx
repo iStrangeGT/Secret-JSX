@@ -7,14 +7,14 @@ import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare, FiFolder, FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
-const Sidebar = () => {
+const Product = () => {
   const menus = [
     { name: "Dashboard", link: "/dashboard", icon: MdOutlineDashboard },
     { name: "User", link: "/", icon: AiOutlineUser },
     { name: "Messages", link: "/", icon: FiMessageSquare },
     { name: "Analytics", link: "/", icon: TbReportAnalytics, margin: true },
     { name: "File Manager", link: "/", icon: FiFolder },
-    { name: "Product", link: "/", icon: FiShoppingCart },
+    { name: "Product", link: "/product", icon: FiShoppingCart },
     { name: "Saved", link: "/", icon: AiOutlineHeart, margin: true },
     { name: "Setting", link: "/", icon: RiSettings4Line },
   ];
@@ -25,7 +25,7 @@ const Sidebar = () => {
     <div className="flex h-screen">
       {/* Sidebar */}
       <div
-        className={`bg-white/30 ${
+        className={`bg-white/50 ${
           open ? "w-72" : "w-16"
         } duration-500 text-blue-800 px-4`}
       >
@@ -71,7 +71,7 @@ const Sidebar = () => {
       {/* Main Content */}
       <div className="flex-1 flex flex-col">
         {/* Navbar */}
-        <nav className="backdrop-blur-md bg-white/30 w-full">
+        <nav className="backdrop-blur-md bg-white/40 w-full">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
@@ -83,9 +83,16 @@ const Sidebar = () => {
 </div>
 </div>
         </nav>
+
+        {/* Page Content */}
+        <main className="p-6  flex-1">
+          {/* Add your page content here */}
+          <h1 className="text-xl mt-2 text-blue-800 font-bold">Welcome to SECRETSTORE</h1>
+          <p className="text-gray-500 mt-5"> Hi Customers!, We are here to provide a variety of server needs, such as game servers or web servers. We provide VPS, RDP, Growtopia Private Server Source, Coding Service, and more.</p>
+        </main>
       </div>
     </div>
   );
 };
 
-export default Sidebar;
+export default Product;
