@@ -23,9 +23,9 @@ const Dashboard = () => {
   return (
     <section className="flex gap-6">
       <div
-        className={`bg-[#0e0e0e] min-h-screen ${
+        className={`bg-white/50 min-h-screen ${
           open ? "w-72" : "w-16"
-        } duration-500 text-gray-100 px-4`}
+        } duration-500 text-blue-800 px-4`}
       >
         <div className="py-3 flex justify-end">
           <HiMenuAlt3
@@ -57,7 +57,7 @@ const Dashboard = () => {
               <h2
                 className={`${
                   open && "hidden"
-                } absolute left-48 bg-white font-semibold whitespace-pre text-gray-900 rounded-md drop-shadow-lg px-0 py-0 w-0 overflow-hidden group-hover:px-2 group-hover:py-1 group-hover:left-14 group-hover:duration-300 group-hover:w-fit  `}
+                } absolute left-48 bg-white font-semibold whitespace-pre text-blue-800 rounded-md drop-shadow-lg px-0 py-0 w-0 overflow-hidden group-hover:px-2 group-hover:py-1 group-hover:left-14 group-hover:duration-300 group-hover:w-fit  `}
               >
                 {menu?.name}
               </h2>
@@ -65,7 +65,7 @@ const Dashboard = () => {
           ))}
         </div>
       </div>
-      <div className="m-3 text-xl text-gray-900 font-semibold">
+      <div className="m-3 text-xl text-blue-800 font-semibold">
         SECRETSTORE
       </div>
     </section>
