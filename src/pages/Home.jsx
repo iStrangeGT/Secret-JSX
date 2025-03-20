@@ -78,7 +78,7 @@ const Home = () => {
       </div>
       <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center  text-blue-800  bg-white/50 rounded-lg border border-gray-100 shadow">
-              <h3 class="mb-4 text-xl font-semibold">Starter</h3>
+              <h3 class="mb-4 text-xl font-semibold">Basic</h3>
               <p class="font-light text-gray-500 sm:text-lg ">taktahu.</p>
               <div class="flex justify-center items-baseline my-8">
                   <span class="mr-2 text-xl  text-blue-800 font-extrabold">RP.300.000</span>
