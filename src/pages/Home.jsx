@@ -56,7 +56,7 @@ const Home = () => {
 </h1>
 </div>
 <div className="mt-2 flex justify-center">
-  <div className="text-center max-w-2xl">
+  <div className="text-center max-w-2xl px-4">
     <p className="text-gray-600 text-xl mt-8">
       Hi Customers! We are here to provide a variety of server needs, such as game servers or web servers. We provide VPS, RDP, Growtopia Private Server Source, Coding Service, and more.
     </p>
@@ -64,7 +64,7 @@ const Home = () => {
 
 </div>
 <div className="flex justify-center items-center my-28 mt-10">
-  <button className="px-4 py-2 rounded-full bg-blue-800 text-lg text-white hover:opacity-90 transition duration-300">
+  <button className="px-8 py-2 rounded-full bg-blue-800 text-lg text-white hover:opacity-90 transition duration-300">
   <Link to="/dashboard">Get Started</Link>
   </button>
 </div>
