@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-				"sans": ["publicpixel", ...defaultTheme.fontFamily.sans],
+				"sans": ["geoform", ...defaultTheme.fontFamily.sans],
 			},
     },
   },

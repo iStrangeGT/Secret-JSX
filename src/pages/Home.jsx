@@ -11,21 +11,21 @@ const Home = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <img src="/pelr.png" alt="" />
-        <span className="p-4 font-bold text-xl text-blue-800">SECRETSTORE
+        <span className="p-4 font-extrabold text-3xl text-blue-800">SECRETSTORE
         </span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
           
-            <Link to="/hosting" className="text-gray-600 text-xs hover:text-purple-600 transition duration-300">
+            <Link to="/hosting" className="text-gray-600 text-sm hover:text-purple-600 transition duration-300">
             Hosting
               </Link>
-              <Link to="/product" className="text-gray-600 text-xs  hover:text-purple-600 transition duration-300">
+              <Link to="/product" className="text-gray-600 text-sm  hover:text-purple-600 transition duration-300">
                 Product
               </Link>
-              <Link to="/gtps-source" className="text-gray-600 text-xs hover:text-purple-600 transition duration-300">
+              <Link to="/gtps-source" className="text-gray-600 text-sm hover:text-purple-600 transition duration-300">
                 Growtopia
               </Link>
-              <button className="px-4 py-2 rounded-full bg-blue-800 text-xs text-white hover:opacity-90 transition duration-300">
+              <button className="px-4 py-2 rounded-full bg-blue-800 text-sm text-white hover:opacity-90 transition duration-300">
   <Link to="/dashboard">Get Started</Link>
 </button>
             </div>
@@ -50,21 +50,21 @@ const Home = () => {
         </div>
       </nav>
  
-<div className=" mt-48 text-center">
-<h1 className="text-3xl font-bold text-blue-800">
+<div className=" mt-52 text-center">
+<h1 className="text-5xl font-extrabold text-blue-800">
   Welcome to SECRETSTORE!
 </h1>
 </div>
 <div className="mt-2 flex justify-center">
   <div className="text-center max-w-2xl">
-    <p className="text-gray-600 text-lg mt-8">
+    <p className="text-gray-600 text-xl mt-8">
       Hi Customers! We are here to provide a variety of server needs, such as game servers or web servers. We provide VPS, RDP, Growtopia Private Server Source, Coding Service, and more.
     </p>
   </div>
 
 </div>
-<div className="flex justify-center items-center mt-10">
-  <button className="px-4 py-2 rounded-full bg-blue-800 text-xs text-white hover:opacity-90 transition duration-300">
+<div className="flex justify-center items-center my-28 mt-10">
+  <button className="px-4 py-2 rounded-full bg-blue-800 text-lg text-white hover:opacity-90 transition duration-300">
   <Link to="/dashboard">Get Started</Link>
   </button>
 </div>
@@ -72,9 +72,9 @@ const Home = () => {
 
 
 <section>
-  <div class="py-8 mt-20 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
   <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 class="mb-4 text-lg tracking-tight font-bold text-gray-500 ">GROWTOPIA PRIVATE SERVER HOSTING PLANS</h2>
+          <h2 class="mb-4 text-2xl tracking-tight font-bold text-gray-500 ">GROWTOPIA PRIVATE SERVER HOSTING PLANS</h2>
       </div>
       <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center  text-blue-800  bg-white/50 rounded-lg border border-gray-100 shadow">

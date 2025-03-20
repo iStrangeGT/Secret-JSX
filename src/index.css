@@ -3,8 +3,8 @@
 
 @layer base {
   @font-face {
-      font-family: "publicpixel";
-      src: url(/fonts/PublicPixel.ttf) format('truetype');
+      font-family: "geoform";
+      src: url(/fonts/centurygothic_bold.ttf) format('truetype');
   };
 }
 
