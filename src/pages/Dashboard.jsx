@@ -22,7 +22,7 @@ const Dashboard = () => {
   const [open, setOpen] = useState(true);
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen overflow-hidden">
       {/* Sidebar */}
       <div
         className={`bg-white/30 ${
