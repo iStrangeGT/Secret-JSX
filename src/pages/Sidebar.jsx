@@ -88,7 +88,7 @@ const Sidebar = () => {
   </div>
 
 <div className="md:hidden">
-<div class="flex flex-col items-center w-16 h-full overflow-hidden text-gray-400 bg-gray-900 rounded">
+<div class="flex flex-col items-center w-16 h-full overflow-hidden min-h-screen text-gray-400 bg-gray-900 rounded">
     <a class="flex items-center justify-center mt-3" href="#">
       <svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path
