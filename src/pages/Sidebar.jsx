@@ -72,7 +72,7 @@ const Sidebar = () => {
   </div>
 
   {/* Search Input */}
-  <form className="w-[70%] mt-2 sm:mx-2">
+  <form className="md:w-[70%] mt-2">
     <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only">
       Search
     </label>
