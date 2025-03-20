@@ -22,7 +22,7 @@ const Dashboard = () => {
   const [open, setOpen] = useState(true);
 
   return (
-    <div className="flex h-full">
+    <div className="flex sm:h-full h-full">
       {/* Sidebar */}
       <div
         className={`bg-white/30 ${
