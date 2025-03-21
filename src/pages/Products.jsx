@@ -100,7 +100,8 @@ const Products = () => {
       <div class="px-5 pb-5">
         <a href="#">
           <h5 class="text-xl font-semibold tracking-tight text-gray-500">
-          <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 4GB 2vCORE
+          <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 4GB 2vCORE <span className="text-red-600">[Out of Stock]
+          </span>
           </h5>
         </a>
         <div class="flex items-center mt-2.5 mb-5">
@@ -139,7 +140,8 @@ const Products = () => {
 <div class="px-5 pb-5">
   <a href="#">
     <h5 class="text-xl font-semibold tracking-tight text-gray-500">
-    <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 8GB 4vCORE
+    <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 8GB 4vCORE  <span className="text-red-600">[Out of Stock]
+    </span>
     </h5>
   </a>
   <div class="flex items-center mt-2.5 mb-5">
@@ -177,7 +179,8 @@ const Products = () => {
 <div class="px-5 pb-5">
   <a href="#">
     <h5 class="text-xl font-semibold tracking-tight text-gray-500">
-   <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 16GB 4vCORE
+   <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 16GB 4vCORE <span className="text-red-600">[Out of Stock]
+   </span>
     </h5>
   </a>
   <div class="flex items-center mt-2.5 mb-5">
@@ -209,6 +212,10 @@ const Products = () => {
 </div>
   </div>
 </div>
+
+
+
+
 
 
         </main>
