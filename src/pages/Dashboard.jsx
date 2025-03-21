@@ -1,22 +1,21 @@
 import React, { useState } from "react";
-import { HiMenuAlt3 } from "react-icons/hi";
+import { HiMenuAlt3, HiOutlineDocumentDuplicate} from "react-icons/hi";
 import { MdOutlineDashboard } from "react-icons/md";
 import { RiSettings4Line } from "react-icons/ri";
 import { TbReportAnalytics } from "react-icons/tb";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
-import { FiMessageSquare, FiFolder, FiShoppingCart } from "react-icons/fi";
+import { FiMessageSquare, FiFolder, FiHome, FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const menus = [
-    { name: "Dashboard", link: "/dashboard", icon: MdOutlineDashboard },
-    { name: "User", link: "/", icon: AiOutlineUser },
-    { name: "Messages", link: "/", icon: FiMessageSquare },
-    { name: "Analytics", link: "/", icon: TbReportAnalytics, margin: true },
-    { name: "File Manager", link: "/", icon: FiFolder },
-    { name: "Product", link: "/product", icon: FiShoppingCart },
-    { name: "Saved", link: "/", icon: AiOutlineHeart, margin: true },
-    { name: "Setting", link: "/", icon: RiSettings4Line },
+    { name: "Dashboard", link: "/dashboard", icon: FiHome },
+    { name: "Testimoni", link: "/", icon: HiOutlineDocumentDuplicate },
+    { name: "Products", link: "/products", icon: FiShoppingCart },
+    { name: "Feedback", link: "/error", icon: FiMessageSquare },
+   
+    { name: "Setting", link: "/error", icon: RiSettings4Line, margin: true },
+    { name: "Account", link: "/error", icon: AiOutlineUser },
   ];
 
   const [open, setOpen] = useState(true);
@@ -42,7 +41,7 @@ const Dashboard = () => {
               to={menu.link}
               key={i}
               className={`${
-                menu.margin && "mt-5"
+                menu.margin && "mt-48"
               } group flex items-center text-lg gap-3.5 font-medium p-2 hover:bg-gray-300 rounded-md`}
             >
               <div>{React.createElement(menu.icon, { size: "20" })}</div>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import React from "react";
+import { FiArrowRight } from "react-icons/fi";
 
 const Home = () => {
     return (
@@ -19,8 +20,8 @@ const Home = () => {
             <Link to="/hosting" className="text-gray-600 text-sm hover:text-purple-600 transition duration-300">
             Hosting
               </Link>
-              <Link to="/product" className="text-gray-600 text-sm  hover:text-purple-600 transition duration-300">
-                Product
+              <Link to="/products" className="text-gray-600 text-sm  hover:text-purple-600 transition duration-300">
+                Products
               </Link>
               <Link to="/gtps-source" className="text-gray-600 text-sm hover:text-purple-600 transition duration-300">
                 Growtopia
