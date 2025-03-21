@@ -101,7 +101,7 @@ const Dashboard = () => {
                 <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-blue-800 lg:text-3xl">VPS/RDP</h1>
                 <p class="mx-auto text-base leading-relaxed text-gray-500">
                 Vps and Rdp at SECRETSTORE have very good quality and are guaranteed to last. We not only provide Vps and Rdp DigitalOcean (illegal), we also provide Vps and Rdp with the Indonesian Region (legal). we also provide many OS such as (Windows, Linux, etc.).</p>                <div class="mt-4">
-                    <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                    <Link to="/products" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </Link> 
                 </div>
             </div>
             <div class="p-6">
@@ -111,7 +111,7 @@ const Dashboard = () => {
                 <p class="mx-auto text-base leading-relaxed text-gray-500">
                   
 Growtopia At SECRETSTORE we provide source servers for growtopia private servers for those of you who want to start a server. and we also provide hosting services for those of you who have no coding experience, for the price itself it is certainly affordable.</p>                <div class="mt-4">
-                    <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                    <Link to="/products" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </Link> 
                 </div>
             </div>
             <div class="p-6">
@@ -119,7 +119,7 @@ Growtopia At SECRETSTORE we provide source servers for growtopia private servers
                 <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-blue-800 lg:text-3xl">Coding Service</h1>
                 <p class="mx-auto text-base leading-relaxed text-gray-500">
                 coding service is a service that we provide for those of you who have no experience in coding but want to start a server, create a website, create an application, or even a game. we provide this service at a very affordable price and a fast process.</p>                <div class="mt-4">
-                    <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                   <Link to="/products" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </Link>
                 </div>
             </div>
         </div>
