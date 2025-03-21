@@ -43,7 +43,7 @@ const Dashboard = () => {
               key={i}
               className={`${
                 menu.margin && "mt-5"
-              } group flex items-center text-sm gap-3.5 font-medium p-2 hover:bg-gray-300 rounded-md`}
+              } group flex items-center text-lg gap-3.5 font-medium p-2 hover:bg-gray-300 rounded-md`}
             >
               <div>{React.createElement(menu.icon, { size: "20" })}</div>
               <h2
@@ -76,7 +76,7 @@ const Dashboard = () => {
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
                 <img src="/pelr.png" alt="" />
-                <span className="p-4 font-bold text-xl text-blue-800">
+                <span className="p-4 font-bold text-3xl text-blue-800">
                   SECRETSTORE
                 </span>
               </div>
