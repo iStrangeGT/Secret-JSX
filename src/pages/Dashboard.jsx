@@ -91,7 +91,7 @@ const Dashboard = () => {
           <h1 className="text-5xl mt-8 text-blue-800 font-bold">Welcome to SECRETSTORE</h1>
           <p className="text-gray-500 mt-5"> Hi Customers!, We are here to provide a variety of server needs, such as game servers or web servers. We provide VPS, RDP, Growtopia Private Server Source, Coding Service, and more.</p>
           <h2 className="text-2xl text-center mt-16 text-blue-800 font-bold">Start Your Journey With SECRETSTORE🛒</h2>
-          <p className="text-gray-500 justify-center text-center mt-2"> Hi Customers!, We are here to provide a variety of server needs, such as game servers or web servers. We provide VPS, RDP, Growtopia Private Server Source, Coding Service, and more.</p>
+          <p className="text-gray-500 justify-center text-lg text-center mt-2"> Select Your Journey With SECRETSTORE!</p>
           <section>
     <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
         <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
@@ -100,7 +100,7 @@ const Dashboard = () => {
 
                 <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-blue-800 lg:text-3xl">VPS/RDP</h1>
                 <p class="mx-auto text-base leading-relaxed text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>                <div class="mt-4">
+                Vps and Rdp at SECRETSTORE have very good quality and are guaranteed to last. We not only provide Vps and Rdp DigitalOcean (illegal), we also provide Vps and Rdp with the Indonesian Region (legal). we also provide many OS such as (Windows, Linux, etc.).</p>                <div class="mt-4">
                     <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
                 </div>
             </div>
@@ -109,7 +109,8 @@ const Dashboard = () => {
 
                 <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-blue-800 lg:text-3xl">Growtopia</h1>
                 <p class="mx-auto text-base leading-relaxed text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>                <div class="mt-4">
+                  
+Growtopia At SECRETSTORE we provide source servers for growtopia private servers for those of you who want to start a server. and we also provide hosting services for those of you who have no coding experience, for the price itself it is certainly affordable.</p>                <div class="mt-4">
                     <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
                 </div>
             </div>
@@ -117,7 +118,7 @@ const Dashboard = () => {
                 <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="coding.png" alt="coding"/>
                 <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-blue-800 lg:text-3xl">Coding Service</h1>
                 <p class="mx-auto text-base leading-relaxed text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>                <div class="mt-4">
+                coding service is a service that we provide for those of you who have no experience in coding but want to start a server, create a website, create an application, or even a game. we provide this service at a very affordable price and a fast process.</p>                <div class="mt-4">
                     <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
                 </div>
             </div>
