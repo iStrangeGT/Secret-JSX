@@ -22,10 +22,10 @@ const Product = () => {
   const [open, setOpen] = useState(true);
 
   return (
-    <div className="flex h-screen">
+    <div className="flex min-h-screen overflow-hidden">
       {/* Sidebar */}
       <div
-        className={`bg-white/50 ${
+        className={`bg-white/30 ${
           open ? "w-72" : "w-16"
         } duration-500 text-blue-800 px-4`}
       >
@@ -43,7 +43,7 @@ const Product = () => {
               key={i}
               className={`${
                 menu.margin && "mt-5"
-              } group flex items-center text-sm gap-3.5 font-medium p-2 hover:bg-gray-300 rounded-md`}
+              } group flex items-center text-lg gap-3.5 font-medium p-2 hover:bg-gray-300 rounded-md`}
             >
               <div>{React.createElement(menu.icon, { size: "20" })}</div>
               <h2
@@ -76,7 +76,7 @@ const Product = () => {
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
                 <img src="/pelr.png" alt="" />
-                <span className="p-4 font-bold text-xl text-blue-800">
+                <span className="p-4 font-bold text-3xl text-blue-800">
                   SECRETSTORE
                 </span>
               </div>
@@ -87,8 +87,9 @@ const Product = () => {
         {/* Page Content */}
         <main className="p-6  flex-1">
           {/* Add your page content here */}
-          <h1 className="text-xl mt-2 text-blue-800 font-bold">Welcome to SECRETSTORE</h1>
+          <h1 className="text-5xl mt-8 text-blue-800 font-bold">SECRETSTORE's Products Section.</h1>
           <p className="text-gray-500 mt-5"> Hi Customers!, We are here to provide a variety of server needs, such as game servers or web servers. We provide VPS, RDP, Growtopia Private Server Source, Coding Service, and more.</p>
+
         </main>
       </div>
     </div>
