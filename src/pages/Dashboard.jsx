@@ -90,8 +90,8 @@ const Dashboard = () => {
 
           <h1 className="text-5xl mt-8 text-blue-800 font-bold">Welcome to SECRETSTORE</h1>
           <p className="text-gray-500 mt-5"> Hi Customers!, We are here to provide a variety of server needs, such as game servers or web servers. We provide VPS, RDP, Growtopia Private Server Source, Coding Service, and more.</p>
-          <h2 className="text-2xl text-center mt-16 text-blue-800 font-bold">Start Your Journey With SECRETSTORE🛒</h2>
-          <p className="text-gray-500 justify-center text-lg text-center mt-2"> Select Your Journey With SECRETSTORE!</p>
+          <h2 className="text-2xl text-center mt-16 text-blue-800 font-bold">Start Your Journey With SECRETSTORE</h2>
+          <p className="text-gray-500 justify-center text-lg text-center mt-2"> Select Your Journey With SECRETSTORE, By Selecting One Of Products Below!</p>
           <section>
     <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
         <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
