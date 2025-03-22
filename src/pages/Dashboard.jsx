@@ -4,14 +4,15 @@ import { MdOutlineDashboard } from "react-icons/md";
 import { RiSettings4Line } from "react-icons/ri";
 import { TbReportAnalytics } from "react-icons/tb";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
-import { FiMessageSquare, FiFolder, FiHome, FiShoppingCart } from "react-icons/fi";
+import { FiMessageSquare, FiServer, FiHome, FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const menus = [
     { name: "Dashboard", link: "/dashboard", icon: FiHome },
-    { name: "Testimoni", link: "/", icon: HiOutlineDocumentDuplicate },
+    { name: "Testimoni", link: "/testimoni", icon: HiOutlineDocumentDuplicate },
     { name: "Products", link: "/products", icon: FiShoppingCart },
+    { name: "Growtopia", link: "/growtopia", icon: FiServer },
     { name: "Feedback", link: "/error", icon: FiMessageSquare },
    
     { name: "Setting", link: "/error", icon: RiSettings4Line, margin: true },

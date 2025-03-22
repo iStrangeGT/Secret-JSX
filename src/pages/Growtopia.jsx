@@ -7,7 +7,7 @@ import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare, FiServer, FiHome, FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
-const Products = () => {
+const Growtopia = () => {
   const menus = [
     { name: "Dashboard", link: "/dashboard", icon: FiHome },
     { name: "Testimoni", link: "/testimoni", icon: HiOutlineDocumentDuplicate },
@@ -87,13 +87,13 @@ const Products = () => {
         {/* Page Content */}
         <main className="p-6  flex-1">
           {/* Add your page content here */}
-          <h1 className="text-5xl mt-8 text-blue-800 font-bold">SECRETSTORE's Products Section.</h1>
+          <h1 className="text-5xl mt-8 text-blue-800 font-bold">SECRETSTORE's Growtopia Section.</h1>
  
       <p className="text-gray-500 mt-5"> Hi Customers!, We are here to provide a variety of server needs, such as game servers or web servers. We provide VPS, RDP, Growtopia Private Server Source, Coding Service, and more.</p>
 
 
 <div class="relative flex min-h-screen flex-col mt-5">
-<h2 className="text-2xl mt-3 mb-3 text-blue-800 flex font-bold">[DigitalOcean] <span className="mx-2 text-gray-700">VPS/RDP Packet 1</span></h2>
+<h2 className="text-2xl mt-3 mb-3 text-blue-800 flex font-bold">[READY UP] <span className="mx-2 text-gray-700">Growtopia Private Server</span></h2>
   <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
     <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
@@ -111,7 +111,7 @@ const Products = () => {
 
 
   </div>
-  <h2 className="text-2xl mt-5 mb-3 text-blue-800 flex font-bold">[DigitalOcean] <span className="mx-2 text-gray-700">VPS/RDP Packet 2</span></h2>
+  <h2 className="text-2xl mt-5 mb-3 text-blue-800 flex font-bold">[Source CPP] <span className="mx-2 text-gray-700">Growtopia Private Server</span></h2>
   <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
   <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
@@ -124,7 +124,7 @@ const Products = () => {
     </div>
 
 </div>
-<h2 className="text-2xl mt-5 mb-3 text-blue-800 flex font-bold">[DigitalOcean] <span className="mx-2 text-gray-700">VPS/RDP Packet 3</span></h2>
+<h2 className="text-2xl mt-5 mb-3 text-blue-800 flex font-bold">[Coding Service] <span className="mx-2 text-gray-700">Growtopia Private Server</span></h2>
   <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
   <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
@@ -164,4 +164,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Growtopia;

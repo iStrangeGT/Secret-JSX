@@ -17,13 +17,13 @@ const Home = () => {
             </div>
             <div className="hidden md:flex items-center space-x-8">
           
-            <Link to="/hosting" className="text-gray-600 text-sm hover:text-purple-600 transition duration-300">
-            Hosting
+            <Link to="/testimoni" className="text-gray-600 text-sm hover:text-purple-600 transition duration-300">
+            Testimoni
               </Link>
               <Link to="/products" className="text-gray-600 text-sm  hover:text-purple-600 transition duration-300">
                 Products
               </Link>
-              <Link to="/gtps-source" className="text-gray-600 text-sm hover:text-purple-600 transition duration-300">
+              <Link to="/growtopia" className="text-gray-600 text-sm hover:text-purple-600 transition duration-300">
                 Growtopia
               </Link>
               <button className="px-4 py-2 rounded-full bg-blue-800 text-sm text-white hover:opacity-90 transition duration-300">
