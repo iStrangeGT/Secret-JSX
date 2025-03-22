@@ -92,12 +92,12 @@ const Products = () => {
       <p className="text-gray-500 mt-5"> Hi Customers!, We are here to provide a variety of server needs, such as game servers or web servers. We provide VPS, RDP, Growtopia Private Server Source, Coding Service, and more.</p>
 
 
-<div class="relative flex min-h-screen flex-col mt-5">
-<h2 className="text-2xl mt-3 mb-3 text-blue-800 flex font-bold">[DigitalOcean] <span className="mx-2 text-gray-700">VPS/RDP Packet 1</span></h2>
-  <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-  <div class=" shrink-0 snap-start snap-always">
-      <div class=" inset-0 flex items-center justify-center">
-      <div className="w-full max-w-sm bg-white/70 border border-gray-200 rounded-lg shadow-sm">
+      <div class="relative flex min-h-screen flex-col mt-5">
+      <h2 className="text-2xl mt-5 mb-3 text-blue-400 flex font-bold">[DigitalOcean] <span className="mx-2 text-gray-700">VPS/RDP Packet 1</span></h2>
+  <div class="carousel scrollbar-hide flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="inset-0 flex items-center justify-center">
+      <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
     src="./DigitalOcean.png"
@@ -147,13 +147,12 @@ const Products = () => {
     </div>
   </div>
 </div>
-
       </div>
     </div>
 
-    <div class=" shrink-0 snap-start snap-always">
-      <div class=" inset-0 flex items-center justify-center">
-      <div className="w-full max-w-sm bg-white/70 border border-gray-200 rounded-lg shadow-sm">
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="absolute inset-0 flex items-center justify-center">
+      <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
     src="./DigitalOcean.png"
@@ -203,12 +202,13 @@ const Products = () => {
     </div>
   </div>
 </div>
-
       </div>
     </div>
-    <div class=" shrink-0 snap-start snap-always">
-      <div class=" inset-0 flex items-center justify-center">
-      <div className="w-full max-w-sm bg-white/70 border border-gray-200 rounded-lg shadow-sm">
+
+
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="absolute inset-0 flex items-center justify-center">
+      <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
     src="./DigitalOcean.png"
@@ -258,17 +258,16 @@ const Products = () => {
     </div>
   </div>
 </div>
-
       </div>
     </div>
+   </div>
+   <h2 className="text-2xl mt-5 mb-3 text-blue-400 flex font-bold">[DigitalOcean] <span className="mx-2 text-gray-700">VPS/RDP Packet 2</span></h2>
 
-
-  </div>
-  <h2 className="text-2xl mt-5 mb-3 text-blue-800 flex font-bold">[DigitalOcean] <span className="mx-2 text-gray-700">VPS/RDP Packet 2</span></h2>
-  <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-  <div class=" shrink-0 snap-start snap-always">
-      <div class=" inset-0 flex items-center justify-center">
-      <div className="w-full max-w-sm bg-white/70 border border-gray-200 rounded-lg shadow-sm">
+  
+  <div class="carousel scrollbar-hide flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="inset-0 flex items-center justify-center">
+      <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
     src="./DigitalOcean.png"
@@ -318,13 +317,12 @@ const Products = () => {
     </div>
   </div>
 </div>
-
       </div>
     </div>
 
-    <div class=" shrink-0 snap-start snap-always">
-      <div class=" inset-0 flex items-center justify-center">
-      <div className="w-full max-w-sm bg-white/70 border border-gray-200 rounded-lg shadow-sm">
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="absolute inset-0 flex items-center justify-center">
+      <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
     src="./DigitalOcean.png"
@@ -374,16 +372,15 @@ const Products = () => {
     </div>
   </div>
 </div>
-
       </div>
     </div>
+   </div>
 
-</div>
-<h2 className="text-2xl mt-5 mb-3 text-red-700 flex font-bold">[IndonesiaRegion] <span className="mx-2 text-gray-700">VPS/RDP</span></h2>
-  <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-  <div class=" shrink-0 snap-start snap-always">
-      <div class=" inset-0 flex items-center justify-center">
-      <div className="w-full max-w-sm bg-white/70 border border-gray-200 rounded-lg shadow-sm">
+   <h2 className="text-2xl mt-5 mb-3 text-red-600 flex font-bold">[IndonesiaRegion] <span className="mx-2 text-gray-700">VPS/RDP</span></h2>
+  <div class="carousel flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="inset-0 flex items-center justify-center">
+      <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
     src="./DigitalOcean.png"
@@ -433,13 +430,14 @@ const Products = () => {
     </div>
   </div>
 </div>
-
       </div>
     </div>
 
-    <div class=" shrink-0 snap-start snap-always">
-      <div class=" inset-0 flex items-center justify-center">
-      <div className="w-full max-w-sm bg-white/70 border border-gray-200 rounded-lg shadow-sm">
+
+
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="absolute inset-0 flex items-center justify-center">
+      <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
     src="./DigitalOcean.png"
@@ -489,13 +487,11 @@ const Products = () => {
     </div>
   </div>
 </div>
-
       </div>
     </div>
-
-    <div class=" shrink-0 snap-start snap-always">
-      <div class=" inset-0 flex items-center justify-center">
-      <div className="w-full max-w-sm bg-white/70 border border-gray-200 rounded-lg shadow-sm">
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="absolute inset-0 flex items-center justify-center">
+      <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
     src="./DigitalOcean.png"
@@ -545,12 +541,11 @@ const Products = () => {
     </div>
   </div>
 </div>
-
       </div>
     </div>
-    <div class=" shrink-0 snap-start snap-always">
-      <div class=" inset-0 flex items-center justify-center">
-      <div className="w-full max-w-sm bg-white/70 border border-gray-200 rounded-lg shadow-sm">
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="absolute inset-0 flex items-center justify-center">
+      <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
     src="./DigitalOcean.png"
@@ -600,11 +595,9 @@ const Products = () => {
     </div>
   </div>
 </div>
-
       </div>
     </div>
-
-</div>
+   </div>
 
   
   

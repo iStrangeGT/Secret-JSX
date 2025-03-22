@@ -95,7 +95,7 @@ const Testimoni= () => {
           <p className="text-gray-500 text-xl mt-3">Testimoni Count: <span className="text-blue-800">49</span>
           </p>
           <div class="relative flex min-h-screen flex-col mt-5">
-  <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
+  <div class="carousel flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
     <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
       <img className="p-0 rounded-lg" src="./testi17.jpg" alt="testi" />
