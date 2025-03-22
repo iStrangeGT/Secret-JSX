@@ -92,73 +92,58 @@ const Products = () => {
 
 
 <div class="relative flex min-h-screen flex-col mt-5">
-<h2 className="text-2xl mt-10 mb-5 text-gray-500 flex font-bold">Vps/Rdp <span className="mx-2 text-blue-800">Packet 1</span></h2>
+<h2 className="text-2xl mt-10 mb-2 text-blue-800 flex font-bold">[DigitalOcean] <span className="mx-2 text-gray-700">VPS/RDP Packet 1</span></h2>
   <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-blue-200 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-8xl font-bold text-white">1</div>
       </div>
     </div>
 
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-purple-200 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-8xl font-bold text-white">2</div>
+      </div>
+    </div>
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="absolute inset-0 flex items-center justify-center">
       </div>
     </div>
 
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-green-200 md:w-[calc(33.33%-(32px/3))]">
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-8xl font-bold text-white">3</div>
-      </div>
-    </div>
 
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-yellow-200 md:w-[calc(33.33%-(32px/3))]">
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-8xl font-bold text-white">4</div>
-      </div>
-    </div>
-
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-red-200 md:w-[calc(33.33%-(32px/3))]">
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-8xl font-bold text-white">5</div>
-      </div>
-    </div>
-
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-orange-200 md:w-[calc(33.33%-(32px/3))]">
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-8xl font-bold text-white">6</div>
-      </div>
-    </div>
-
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-teal-200 md:w-[calc(33.33%-(32px/3))]">
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-8xl font-bold text-white">7</div>
-      </div>
-    </div>
   </div>
-  <h2 className="text-2xl mt-10 mb-5 text-gray-500 flex font-bold">Vps/Rdp <span className="mx-2 text-blue-800">Packet 2</span></h2>
+  <h2 className="text-2xl mt-5 mb-2 text-blue-800 flex font-bold">[DigitalOcean] <span className="mx-2 text-gray-700">VPS/RDP Packet 2</span></h2>
   <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-blue-200 md:w-[calc(33.33%-(32px/3))]">
+  <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-8xl font-bold text-white">1</div>
       </div>
     </div>
 
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-purple-200 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-8xl font-bold text-white">2</div>
       </div>
     </div>
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-blue-200 md:w-[calc(33.33%-(32px/3))]">
+
+</div>
+<h2 className="text-2xl mt-5 mb-2 text-blue-800 flex font-bold">[DigitalOcean] <span className="mx-2 text-gray-700">VPS/RDP Packet 3</span></h2>
+  <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
+  <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-8xl font-bold text-white">1</div>
       </div>
     </div>
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-blue-200 md:w-[calc(33.33%-(32px/3))]">
+
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-8xl font-bold text-white">1</div>
       </div>
     </div>
+
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="absolute inset-0 flex items-center justify-center">
+      </div>
+    </div>
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="absolute inset-0 flex items-center justify-center">
+      </div>
+    </div>
+
 </div>
 
   
