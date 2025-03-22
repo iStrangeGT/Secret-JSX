@@ -96,7 +96,7 @@ const Products = () => {
 <h2 className="text-2xl mt-3 mb-3 text-blue-800 flex font-bold">[DigitalOcean] <span className="mx-2 text-gray-700">VPS/RDP Packet 1</span></h2>
   <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
     <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
-    <div class="inset-0 flex items-center justify-center">
+    <div class="relative inset-0 flex items-center justify-center">
       <div className="w-full max-w-sm bg-white/70 border border-gray-200 rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
@@ -151,7 +151,7 @@ const Products = () => {
     </div>
 
     <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
-    <div class="inset-0 flex items-center justify-center">
+    <div class="relative inset-0 flex items-center justify-center">
       <div className="w-full max-w-sm bg-white/70 border border-gray-200 rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
@@ -205,7 +205,7 @@ const Products = () => {
       </div>
     </div>
     <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
-    <div class="inset-0 flex items-center justify-center">
+    <div class="relative inset-0 flex items-center justify-center">
       <div className="w-full max-w-sm bg-white/70 border border-gray-200 rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
