@@ -87,10 +87,12 @@ const Products = () => {
         <main className="p-6  flex-1">
           {/* Add your page content here */}
           <h1 className="text-5xl mt-8 text-blue-800 font-bold">SECRETSTORE's Products Section.</h1>
-          <p className="text-gray-500 mt-5"> Hi Customers!, We are here to provide a variety of server needs, such as game servers or web servers. We provide VPS, RDP, Growtopia Private Server Source, Coding Service, and more.</p>
-<h2 className="mx-5 text-2xl mt-16 text-blue-800 flex font-bold">Vps/Rdp <span className="mx-2 text-yellow-700">Packet 1</span></h2>
+ 
+      <p className="text-gray-500 mt-5"> Hi Customers!, We are here to provide a variety of server needs, such as game servers or web servers. We provide VPS, RDP, Growtopia Private Server Source, Coding Service, and more.</p>
 
-<div class="relative flex min-h-screen flex-col items-center mt-5">
+
+<div class="relative flex min-h-screen flex-col mt-5">
+<h2 className="text-2xl mt-10 mb-5 text-gray-500 flex font-bold">Vps/Rdp <span className="mx-2 text-blue-800">Packet 1</span></h2>
   <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
     <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-blue-200 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
@@ -134,6 +136,32 @@ const Products = () => {
       </div>
     </div>
   </div>
+  <h2 className="text-2xl mt-10 mb-5 text-gray-500 flex font-bold">Vps/Rdp <span className="mx-2 text-blue-800">Packet 2</span></h2>
+  <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-blue-200 md:w-[calc(33.33%-(32px/3))]">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-8xl font-bold text-white">1</div>
+      </div>
+    </div>
+
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-purple-200 md:w-[calc(33.33%-(32px/3))]">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-8xl font-bold text-white">2</div>
+      </div>
+    </div>
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-blue-200 md:w-[calc(33.33%-(32px/3))]">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-8xl font-bold text-white">1</div>
+      </div>
+    </div>
+    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-blue-200 md:w-[calc(33.33%-(32px/3))]">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-8xl font-bold text-white">1</div>
+      </div>
+    </div>
+</div>
+
+  
   
   </div>
   
