@@ -276,7 +276,7 @@ const Products = () => {
   <div className="px-5 pb-5">
     <a href="#">
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 8GB 4vCORE{" "}
+        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 4GB 2vCORE{" "}
         <span className="text-red-600">[Out of Stock]</span>
       </h5>
     </a>
@@ -331,7 +331,7 @@ const Products = () => {
   <div className="px-5 pb-5">
     <a href="#">
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 16GB 4vCORE{" "}
+        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 8GB 4vCORE{" "}
         <span className="text-red-600">[Out of Stock]</span>
       </h5>
     </a>
@@ -366,9 +366,11 @@ const Products = () => {
     </div>
     <div className="flex items-center justify-between">
       <span className="text-3xl font-bold text-gray-500">RP.40.000</span>
+     <Link to="/packet2-8GB">
       <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
         Buy Now
       </button>
+      </Link>
     </div>
   </div>
 </div>
