@@ -93,7 +93,7 @@ const Growtopia = () => {
 
 
       <div class="relative flex min-h-screen flex-col mt-5">
-      <h2 className="text-2xl mt-5 mb-3 text-blue-800 flex font-bold">[READY UP] <span className="mx-2 text-gray-700">Growtopia Private Server</span></h2>
+      <h2 className="text-2xl mt-5 mb-3 text-blue-800 flex font-bold">[READYUP] <span className="mx-2 text-gray-700">Growtopia Private Server</span></h2>
   <div class="carousel scrollbar-hide flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
     <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="inset-0 flex items-center justify-center">
@@ -151,7 +151,7 @@ const Growtopia = () => {
     </div>
 
     <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
-      <div class="inset-0 flex items-center justify-center">
+      <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
@@ -207,7 +207,7 @@ const Growtopia = () => {
 
 
     <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
-      <div class="inset-0 flex items-center justify-center">
+      <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
@@ -262,7 +262,7 @@ const Growtopia = () => {
     </div>
 
    </div>
-  <h2 className="text-2xl mt-5 mb-3 text-blue-800 flex font-bold">[SourceCPP] <span className="mx-2 text-gray-700">Growtopia Private Server</span></h2>
+  <h2 className="text-2xl mt-5 mb-3 text-blue-800 flex font-bold">[CPP] <span className="mx-2 text-gray-700">Growtopia Private Server</span></h2>
 
   
   <div class="carousel scrollbar-hide flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
@@ -277,7 +277,7 @@ const Growtopia = () => {
   <div className="px-5 pb-5">
     <a href="#">
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-blue-800">[SourceCPP]</span> Core Only + 1x Update{" "}
+        <span className="text-blue-800">[CoreCPP]</span> Core Only + 1x Update{" "}
         <span className="text-blue-500">[Available]</span>
       </h5>
     </a>
@@ -322,7 +322,7 @@ const Growtopia = () => {
     </div>
 
     <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
-      <div class="inset-0 flex items-center justify-center">
+      <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
@@ -437,7 +437,7 @@ const Growtopia = () => {
 
 
     <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
-      <div class="inset-0 flex items-center justify-center">
+      <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
@@ -491,7 +491,7 @@ const Growtopia = () => {
       </div>
     </div>
     <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
-      <div class="inset-0 flex items-center justify-center">
+      <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
@@ -606,7 +606,7 @@ const Growtopia = () => {
 
 
     <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
-      <div class="inset-0 flex items-center justify-center">
+      <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
@@ -660,7 +660,7 @@ const Growtopia = () => {
       </div>
     </div>
     <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
-      <div class="inset-0 flex items-center justify-center">
+      <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
@@ -704,7 +704,7 @@ const Growtopia = () => {
       </span>
     </div>
     <div className="flex items-center justify-between">
-      <span className="text-3xl font-bold text-gray-500">RP.999.999</span>
+      <span className="text-3xl font-bold text-gray-500">RP.800.000</span>
       <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
         Buy Now
       </button>
