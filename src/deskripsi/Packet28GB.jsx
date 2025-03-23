@@ -61,7 +61,7 @@ const Packet28GB = () => {
 <p>- Active 28 - 30 Day</p>
           </p>
           <p class="mb-6 text-gray-500 ">
-         Terms of Service
+         ⛔Terms of Service⛔
          <p>- Dont Remove Port :9999 in Defender</p>
 <p>- Dont Forget to Change Password</p>
 <p>- Forget Password = RIP!!</p>
@@ -70,6 +70,8 @@ const Packet28GB = () => {
 <p>- Dont Use For Hacking</p>
 <p>- Dont Use for Gaming</p>
 <p>- Dont Use for Carding</p>
+<p>- Dont Get DDOS</p>
+<p>- Dont Get Hacked/Backdoor</p>
 <p>- Dont Use for Watch Video</p>
 <p>- Dont Cpu 95%</p>
 <p>- PANEL CLOUD SUS? = NO REFFUND!!</p>
