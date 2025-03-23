@@ -19,7 +19,7 @@ const Packet28GB = () => {
             <p
               class="text-2xl font-extrabold text-gray-500 sm:text-3xl "
             >
-             RP.40.000
+             RP.80.000
             </p>
           </div>
 
@@ -57,8 +57,15 @@ const Packet28GB = () => {
 
           <p class="mb-6 text-gray-500 ">
          Description:
-         <p>- Guarantee 15 Day</p>
+         <p>- 8GB RAM</p>
+         <p>- 4 vCore</p>
+
+<p>- Storage 240GB NVMe</p>
+<p>- BandWidth 6TB</p>
+<p>- Premium Inter Processor</p>
 <p>- Active 28 - 30 Day</p>
+<p>- Guarantee 28 Day</p>
+
           </p>
           <p class="mb-6 text-gray-500 ">
          ⛔Terms of Service⛔
@@ -75,7 +82,7 @@ const Packet28GB = () => {
 <p>- Dont Use for Watch Video</p>
 <p>- Dont Cpu 95%</p>
 <p>- PANEL CLOUD SUS? = NO REFFUND!!</p>
-<p>Note: Breaking Terms of Service Rules? = RIP GUARANTEE!!</p>
+<p className="text-gray-700">Note: Breaking Terms of Service Rules? = <span className="text-red-500">RIP GUARANTEE!!</span></p>
           </p>
 
         </div>
