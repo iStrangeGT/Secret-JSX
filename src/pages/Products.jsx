@@ -161,7 +161,7 @@ const Products = () => {
   <div className="px-5 pb-5">
     <a href="#">
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 4GB 2vCORE{" "}
+        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 8GB 4vCORE{" "}
         <span className="text-red-600">[Out of Stock]</span>
       </h5>
     </a>
@@ -195,7 +195,7 @@ const Products = () => {
       </span>
     </div>
     <div className="flex items-center justify-between">
-      <span className="text-3xl font-bold text-gray-500">RP.25.000</span>
+      <span className="text-3xl font-bold text-gray-500">RP.30.000</span>
       <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
         Buy Now
       </button>
@@ -217,7 +217,7 @@ const Products = () => {
   <div className="px-5 pb-5">
     <a href="#">
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 4GB 2vCORE{" "}
+        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 16GB 4vCORE{" "}
         <span className="text-red-600">[Out of Stock]</span>
       </h5>
     </a>
@@ -251,7 +251,7 @@ const Products = () => {
       </span>
     </div>
     <div className="flex items-center justify-between">
-      <span className="text-3xl font-bold text-gray-500">RP.25.000</span>
+      <span className="text-3xl font-bold text-gray-500">RP.35.000</span>
       <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
         Buy Now
       </button>
@@ -276,7 +276,7 @@ const Products = () => {
   <div className="px-5 pb-5">
     <a href="#">
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 4GB 2vCORE{" "}
+        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 8GB 4vCORE{" "}
         <span className="text-red-600">[Out of Stock]</span>
       </h5>
     </a>
@@ -310,7 +310,7 @@ const Products = () => {
       </span>
     </div>
     <div className="flex items-center justify-between">
-      <span className="text-3xl font-bold text-gray-500">RP.25.000</span>
+      <span className="text-3xl font-bold text-gray-500">RP.35.000</span>
       <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
         Buy Now
       </button>
@@ -331,7 +331,7 @@ const Products = () => {
   <div className="px-5 pb-5">
     <a href="#">
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 4GB 2vCORE{" "}
+        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 16GB 4vCORE{" "}
         <span className="text-red-600">[Out of Stock]</span>
       </h5>
     </a>
@@ -365,7 +365,7 @@ const Products = () => {
       </span>
     </div>
     <div className="flex items-center justify-between">
-      <span className="text-3xl font-bold text-gray-500">RP.25.000</span>
+      <span className="text-3xl font-bold text-gray-500">RP.40.000</span>
       <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
         Buy Now
       </button>
@@ -383,13 +383,13 @@ const Products = () => {
       <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
-    src="./DigitalOcean.png"
-    alt="DigitalOcean VPS product"
+    src="./server.png"
+    alt="indo vps"
   />
   <div className="px-5 pb-5">
     <a href="#">
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 4GB 2vCORE{" "}
+        <span className="text-red-600">[IndonesiaRegion]</span> VPS/RDP 9GB 5vCORE{" "}
         <span className="text-red-600">[Out of Stock]</span>
       </h5>
     </a>
@@ -423,7 +423,7 @@ const Products = () => {
       </span>
     </div>
     <div className="flex items-center justify-between">
-      <span className="text-3xl font-bold text-gray-500">RP.25.000</span>
+      <span className="text-3xl font-bold text-gray-500">RP.170.000</span>
       <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
         Buy Now
       </button>
@@ -440,13 +440,13 @@ const Products = () => {
       <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
-    src="./DigitalOcean.png"
-    alt="DigitalOcean VPS product"
+    s src="./server.png"
+    alt="indo vps"
   />
   <div className="px-5 pb-5">
     <a href="#">
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 4GB 2vCORE{" "}
+        <span className="text-red-600">[IndonesiaRegion]</span> VPS/RDP 17GB 7vCORE{" "}
         <span className="text-red-600">[Out of Stock]</span>
       </h5>
     </a>
@@ -480,7 +480,7 @@ const Products = () => {
       </span>
     </div>
     <div className="flex items-center justify-between">
-      <span className="text-3xl font-bold text-gray-500">RP.25.000</span>
+      <span className="text-3xl font-bold text-gray-500">RP.350.000</span>
       <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
         Buy Now
       </button>
@@ -494,13 +494,13 @@ const Products = () => {
       <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
-    src="./DigitalOcean.png"
-    alt="DigitalOcean VPS product"
+    src="./server.png"
+    alt="indo vps"
   />
   <div className="px-5 pb-5">
     <a href="#">
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 4GB 2vCORE{" "}
+        <span className="text-red-600">[IndonesiaRegion]</span> VPS/RDP 31GB 9vCORE{" "}
         <span className="text-red-600">[Out of Stock]</span>
       </h5>
     </a>
@@ -534,7 +534,7 @@ const Products = () => {
       </span>
     </div>
     <div className="flex items-center justify-between">
-      <span className="text-3xl font-bold text-gray-500">RP.25.000</span>
+      <span className="text-3xl font-bold text-gray-500">RP.555.000</span>
       <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
         Buy Now
       </button>
@@ -548,13 +548,13 @@ const Products = () => {
       <div className="w-full rounded-lg shadow-sm">
   <img
     className="p-8 rounded-t-lg"
-    src="./DigitalOcean.png"
-    alt="DigitalOcean VPS product"
+    src="./server.png"
+    alt="indo vps"
   />
   <div className="px-5 pb-5">
     <a href="#">
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 4GB 2vCORE{" "}
+        <span className="text-red-600">[IndonesiaRegion]</span> VPS/RDP 61GB 11vCORE{" "}
         <span className="text-red-600">[Out of Stock]</span>
       </h5>
     </a>
@@ -588,7 +588,7 @@ const Products = () => {
       </span>
     </div>
     <div className="flex items-center justify-between">
-      <span className="text-3xl font-bold text-gray-500">RP.25.000</span>
+      <span className="text-3xl font-bold text-gray-500">RP.970.000</span>
       <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
         Buy Now
       </button>

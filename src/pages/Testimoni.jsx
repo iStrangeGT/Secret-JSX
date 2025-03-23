@@ -92,7 +92,7 @@ const Testimoni= () => {
           <h1 className="text-5xl mt-8 text-blue-800 font-bold">SECRETSTORE's Testimonials</h1>
           <p className="text-gray-500 mt-2">I only show a few testimonials, if you want to see more testimonials, please join one of the platforms below.
           </p>
-          <p className="text-gray-500 text-xl mt-3">Testimoni Count: <span className="text-blue-800">49</span>
+          <p className="text-gray-500 text-xl mt-3">Testimonials Count: <span className="text-blue-800">49</span>
           </p>
           <div class="relative flex min-h-screen flex-col mt-5">
   <div class="carousel flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
