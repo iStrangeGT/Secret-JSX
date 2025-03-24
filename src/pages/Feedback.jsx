@@ -16,7 +16,7 @@ const Feedback = () => {
     { name: "Feedback", link: "/feedback", icon: FiMessageSquare },
    
     { name: "Settings", link: "/error", icon: RiSettings4Line, margin: true },
-    { name: "Account", link: "/sign-in", icon: AiOutlineUser },
+    { name: "Account", link: "/", icon: AiOutlineUser },
   ];
 
   const [open, setOpen] = useState(true);
