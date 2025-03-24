@@ -1,6 +1,6 @@
 import React from "react";
 
-const Packet28GB = () => {
+const Packet24GB = () => {
   return (
     <section class="py-8 bg-white/70 min-h-screen flex md:py-16 antialiased">
     <div class="max-w-screen-xl px-4 mx-auto 2xl:px-0">
@@ -13,13 +13,13 @@ const Packet28GB = () => {
           <h1
             class="text-xl font-semibold text-blue-400 sm:text-2xl "
           >
-        [DigitalOcean] <span className="text-gray-500">VPS/RDP 8GB 4vCORE</span>
+        [DigitalOcean] <span className="text-gray-500">VPS/RDP 4GB 2vCORE</span>
           </h1>
           <div class="mt-4 sm:items-center sm:gap-4 sm:flex">
             <p
               class="text-2xl font-extrabold text-gray-500 sm:text-3xl "
             >
-             RP.80.000
+             RP.60.000
             </p>
           </div>
 
@@ -57,11 +57,11 @@ const Packet28GB = () => {
 
           <p class="mb-6 text-gray-500 ">
          Description:
-         <p>- 8GB RAM</p>
-         <p>- 4 vCore</p>
+         <p>- 4GB RAM</p>
+         <p>- 2 vCore</p>
 
-<p>- Storage 240GB NVMe</p>
-<p>- BandWidth 6TB</p>
+<p>- Storage 120GB NVMe</p>
+<p>- BandWidth 4TB</p>
 <p>- Premium Inter Processor</p>
 <p>- Active 28 - 30 Day</p>
 <p>- Guarantee 28 Day Full Replace</p>
@@ -92,4 +92,4 @@ const Packet28GB = () => {
   );
 };
 
-export default Packet28GB;
+export default Packet24GB;

@@ -13,7 +13,7 @@ const Testimoni= () => {
     { name: "Testimoni", link: "/testimoni", icon: HiOutlineDocumentDuplicate },
     { name: "Products", link: "/products", icon: FiShoppingCart },
     { name: "Growtopia", link: "/growtopia", icon: FiServer },
-    { name: "Feedback", link: "/error", icon: FiMessageSquare },
+    { name: "Feedback", link: "/feedback", icon: FiMessageSquare },
    
     { name: "Setting", link: "/error", icon: RiSettings4Line, margin: true },
     { name: "Account", link: "/error", icon: AiOutlineUser },

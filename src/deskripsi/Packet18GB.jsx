@@ -1,6 +1,6 @@
 import React from "react";
 
-const Packet28GB = () => {
+const Packet18GB = () => {
   return (
     <section class="py-8 bg-white/70 min-h-screen flex md:py-16 antialiased">
     <div class="max-w-screen-xl px-4 mx-auto 2xl:px-0">
@@ -19,7 +19,7 @@ const Packet28GB = () => {
             <p
               class="text-2xl font-extrabold text-gray-500 sm:text-3xl "
             >
-             RP.80.000
+             RP.30.000
             </p>
           </div>
 
@@ -64,7 +64,7 @@ const Packet28GB = () => {
 <p>- BandWidth 6TB</p>
 <p>- Premium Inter Processor</p>
 <p>- Active 28 - 30 Day</p>
-<p>- Guarantee 28 Day Full Replace</p>
+<p>- Guarantee 15 1x Replace</p>
 
           </p>
           <p class="mb-6 text-gray-500 ">
@@ -92,4 +92,4 @@ const Packet28GB = () => {
   );
 };
 
-export default Packet28GB;
+export default Packet18GB;

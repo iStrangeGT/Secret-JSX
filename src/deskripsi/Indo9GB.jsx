@@ -1,25 +1,25 @@
 import React from "react";
 
-const Packet28GB = () => {
+const Indo9GB = () => {
   return (
     <section class="py-8 bg-white/70 min-h-screen flex md:py-16 antialiased">
     <div class="max-w-screen-xl px-4 mx-auto 2xl:px-0">
       <div class="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
         <div class="shrink-0 max-w-md lg:max-w-lg mx-auto">
-          <img class="w-full " src="./DigitalOcean.png" alt="pepek" />
+          <img class="w-full " src="./server.png" alt="pepek" />
         </div>
 
         <div class="mt-6 sm:mt-8 lg:mt-0">
           <h1
-            class="text-xl font-semibold text-blue-400 sm:text-2xl "
+            class="text-xl font-semibold text-red-600 sm:text-2xl "
           >
-        [DigitalOcean] <span className="text-gray-500">VPS/RDP 8GB 4vCORE</span>
+        [IndonesiaRegion] <span className="text-gray-500">VPS/RDP 9GB 5vCORE</span>
           </h1>
           <div class="mt-4 sm:items-center sm:gap-4 sm:flex">
             <p
               class="text-2xl font-extrabold text-gray-500 sm:text-3xl "
             >
-             RP.80.000
+             RP.170.000
             </p>
           </div>
 
@@ -57,14 +57,14 @@ const Packet28GB = () => {
 
           <p class="mb-6 text-gray-500 ">
          Description:
-         <p>- 8GB RAM</p>
-         <p>- 4 vCore</p>
+         <p>- 9GB RAM</p>
+         <p>- 5 vCore Epyc</p>
 
-<p>- Storage 240GB NVMe</p>
-<p>- BandWidth 6TB</p>
-<p>- Premium Inter Processor</p>
-<p>- Active 28 - 30 Day</p>
-<p>- Guarantee 28 Day Full Replace</p>
+<p>- Storage 50GB NVMe</p>
+<p>- BandWidth 5TB</p>
+<p>- Amd Epyc 7320 Processor</p>
+<p>- Active 30 Day</p>
+<p>- Guarantee 30 Full Replace</p>
 
           </p>
           <p class="mb-6 text-gray-500 ">
@@ -92,4 +92,4 @@ const Packet28GB = () => {
   );
 };
 
-export default Packet28GB;
+export default Indo9GB;

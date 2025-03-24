@@ -104,12 +104,12 @@ const Growtopia = () => {
     alt="gtps"
   />
   <div className="px-5 pb-5">
-    <a href="#">
+    
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
         <span className="text-blue-800">[READY UP]</span> VPS/RDP 4GB With Good CPP{" "}
         <span className="text-blue-500">[Available]</span>
       </h5>
-    </a>
+ 
     <div className="flex items-center mt-2.5 mb-5">
       <div className="flex items-center space-x-1">
         {[...Array(3)].map((_, i) => (
@@ -159,12 +159,12 @@ const Growtopia = () => {
     alt="gtps"
   />
   <div className="px-5 pb-5">
-    <a href="#">
+ 
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
         <span className="text-blue-800">[READY UP]</span> VPS/RDP 8GB With Good CPP{" "}
         <span className="text-blue-500">[Available]</span>
       </h5>
-    </a>
+   
     <div className="flex items-center mt-2.5 mb-5">
       <div className="flex items-center space-x-1">
         {[...Array(3)].map((_, i) => (
@@ -215,12 +215,12 @@ const Growtopia = () => {
     alt="gtps"
   />
   <div className="px-5 pb-5">
-    <a href="#">
+   
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
         <span className="text-blue-800">[READY UP]</span> VPS/RDP 16GB With Good CPP{" "}
         <span className="text-blue-500">[Available]</span>
       </h5>
-    </a>
+ 
     <div className="flex items-center mt-2.5 mb-5">
       <div className="flex items-center space-x-1">
         {[...Array(3)].map((_, i) => (
@@ -275,12 +275,12 @@ const Growtopia = () => {
     alt="gtps"
   />
   <div className="px-5 pb-5">
-    <a href="#">
+    
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
         <span className="text-blue-800">[CoreCPP]</span> Core Only + 1x Update{" "}
         <span className="text-blue-500">[Available]</span>
       </h5>
-    </a>
+   
     <div className="flex items-center mt-2.5 mb-5">
       <div className="flex items-center space-x-1">
         {[...Array(3)].map((_, i) => (
@@ -330,12 +330,12 @@ const Growtopia = () => {
     alt="gtps"
   />
   <div className="px-5 pb-5">
-    <a href="#">
+
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
         <span className="text-blue-800">[SourceCPP]</span> With Source + 1x Update{" "}
         <span className="text-blue-500">[Available]</span>
       </h5>
-    </a>
+ 
     <div className="flex items-center mt-2.5 mb-5">
       <div className="flex items-center space-x-1">
         {[...Array(3)].map((_, i) => (
@@ -388,12 +388,12 @@ const Growtopia = () => {
     alt="cpp"
   />
   <div className="px-5 pb-5">
-    <a href="#">
+   
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
         <span className="text-blue-800">[Services]</span> Fix Code / Add Code GTPS{" "}
         <span className="text-blue-500">[Available]</span>
       </h5>
-    </a>
+    
     <div className="flex items-center mt-2.5 mb-5">
       <div className="flex items-center space-x-1">
         {[...Array(3)].map((_, i) => (
@@ -445,12 +445,12 @@ const Growtopia = () => {
     alt="cpp"
   />
   <div className="px-5 pb-5">
-    <a href="#">
+   
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
         <span className="text-blue-800">[Services]</span> Fix A Download Failed{" "}
         <span className="text-blue-500">[Available]</span>
       </h5>
-    </a>
+   
     <div className="flex items-center mt-2.5 mb-5">
       <div className="flex items-center space-x-1">
         {[...Array(3)].map((_, i) => (
@@ -499,12 +499,12 @@ const Growtopia = () => {
     alt="cpp"
   />
   <div className="px-5 pb-5">
-    <a href="#">
+ 
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
         <span className="text-blue-800">[Services]</span> Become Your GTPS Coder{" "}
         <span className="text-blue-500">[Available]</span>
       </h5>
-    </a>
+   
     <div className="flex items-center mt-2.5 mb-5">
       <div className="flex items-center space-x-1">
         {[...Array(3)].map((_, i) => (
@@ -557,12 +557,12 @@ const Growtopia = () => {
     alt="hosting"
   />
   <div className="px-5 pb-5">
-    <a href="#">
+    
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
       <span className="text-blue-800">[Hosting]</span> Best Hosting With 9GB 5vCore + Premium CPP{" "}
       <span className="text-blue-500">[Available]</span>
       </h5>
-    </a>
+   
     <div className="flex items-center mt-2.5 mb-5">
       <div className="flex items-center space-x-1">
         {[...Array(3)].map((_, i) => (
@@ -614,12 +614,12 @@ const Growtopia = () => {
     alt="hosting"
   />
   <div className="px-5 pb-5">
-    <a href="#">
+   
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
       <span className="text-blue-800">[Hosting]</span> Best Hosting With 17GB 7vCore + Premium CPP{" "}
       <span className="text-blue-500">[Available]</span>
       </h5>
-    </a>
+   
     <div className="flex items-center mt-2.5 mb-5">
       <div className="flex items-center space-x-1">
         {[...Array(3)].map((_, i) => (
@@ -668,12 +668,12 @@ const Growtopia = () => {
     alt="hosting"
   />
   <div className="px-5 pb-5">
-    <a href="#">
+    
       <h5 className="text-xl font-semibold tracking-tight text-gray-500">
         <span className="text-blue-800">[Hosting]</span> Best Hosting With 31GB 9vCore + Premium CPP{" "}
         <span className="text-blue-500">[Available]</span>
       </h5>
-    </a>
+    
     <div className="flex items-center mt-2.5 mb-5">
       <div className="flex items-center space-x-1">
         {[...Array(3)].map((_, i) => (
