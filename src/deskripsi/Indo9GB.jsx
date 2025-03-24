@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Indo9GB = () => {
+  const [selectedOption, setSelectedOption] = useState("");
+  const operatingSystems = {
+    Windows: ["Windows 1", "Windows 2", "Windows 3"],
+    Linux: ["Linux 1", "Linux 2", "Linux 3"],
+    Ubuntu: ["Ubuntu 1", "Ubuntu 2", "Ubuntu 3"],
+  };
+
+  const handleChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
   return (
     <section class="py-8 bg-white/70 min-h-screen flex md:py-16 antialiased">
     <div class="max-w-screen-xl px-4 mx-auto 2xl:px-0">
@@ -22,7 +32,30 @@ const Indo9GB = () => {
              RP.170.000
             </p>
           </div>
-
+          <div className="max-w-md mt-4">
+      <h2 className="text-xl text-gray-500 font-bold mb-4">Select Operating System</h2>
+      <select
+        value={selectedOption}
+        onChange={handleChange}
+        className="w-full border border-gray-300 rounded-md px-4 py-2 text-gray-500 focus:outline-none focus:ring focus:ring-blue-200"
+      >
+        <option value="" disabled>
+          Choose an option
+        </option>
+        {Object.entries(operatingSystems).map(([os, versions]) => (
+          <optgroup key={os} label={os}>
+            {versions.map((version, index) => (
+              <option key={index} value={version}>
+                {version}
+              </option>
+            ))}
+          </optgroup>
+        ))}
+      </select>
+      {selectedOption && (
+        <p className="mt-4 text-gray-500">You selected: {selectedOption}</p>
+      )}
+    </div>
           <div class="mt-4 sm:gap-4 sm:items-center sm:flex sm:mt-8">
 
             <a
