@@ -20,6 +20,12 @@ const Indo9GB = () => {
     if (!selectedOption) {
       setWarning(true); // Show warning if no OS is selected
     } else {
+      const orderDetails = {
+        productName: "VPS/RDP 9GB 5vCORE",
+        price: "RP.170.000",
+        selectedOS: selectedOption,
+      };
+      localStorage.setItem("orderDetails", JSON.stringify(orderDetails));
       setShowModal(true);
     }
   };

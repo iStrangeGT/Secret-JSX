@@ -16,6 +16,7 @@ import Indo17GB from "./deskripsi/Indo17GB";
 import Indo31GB from "./deskripsi/Indo31GB";
 import Indo61GB from "./deskripsi/Indo61GB";
 import Feedback from "./pages/Feedback";
+import Payment from "./pages/Payment";
 
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/indo-31GB" element={<Indo31GB />} />
         <Route path="/indo-61GB" element={<Indo61GB />} />
         <Route path="/feedback" element={<Feedback />} />
+        <Route path="/payment" element={<Payment />} />
         
       </Routes>
     </div>
