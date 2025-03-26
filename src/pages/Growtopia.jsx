@@ -13,10 +13,10 @@ const Growtopia = () => {
     { name: "Testimoni", link: "/testimoni", icon: HiOutlineDocumentDuplicate },
     { name: "Products", link: "/products", icon: FiShoppingCart },
     { name: "Growtopia", link: "/growtopia", icon: FiServer },
-    { name: "Feedback", link: "/error", icon: FiMessageSquare },
+    { name: "Feedback", link: "/feedback", icon: FiMessageSquare },
    
     { name: "Settings", link: "/error", icon: RiSettings4Line, margin: true },
-    { name: "Account", link: "/login", icon: AiOutlineUser },
+    { name: "Account", link: "/error", icon: AiOutlineUser },
   ];
   
     const [open, setOpen] = useState(true);

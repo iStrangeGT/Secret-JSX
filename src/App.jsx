@@ -46,7 +46,7 @@ const App = () => {
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/readyup-8GB" element={<ReadyUP8GB />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/error" element={<Login />} />
         <Route path="/register" element={<Register />} />
         
       </Routes>
