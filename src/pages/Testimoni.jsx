@@ -16,7 +16,7 @@ const Testimoni= () => {
     { name: "Feedback", link: "/feedback", icon: FiMessageSquare },
    
     { name: "Settings", link: "/error", icon: RiSettings4Line, margin: true },
-    { name: "Account", link: "/", icon: AiOutlineUser },
+    { name: "Account", link: "/login", icon: AiOutlineUser },
   ];
 
   const [open, setOpen] = useState(true);
