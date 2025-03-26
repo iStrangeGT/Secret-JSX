@@ -3,13 +3,26 @@ import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import feedbackRoutes from "./Routes/FeedbackRoutes.js";
+import https from "https";
+import fs from "fs";
+import http from "http";
 
 dotenv.config();
 
 const app = express();
+const options = {
+    key: fs.readFileSync('./key.pem'),
+    cert: fs.readFileSync('./cert.pem'),
+};
+app.use(cors({
+    origin: 'https://secret-store.web.id',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+}));
 
-// Middleware
-app.use(cors());
+app.get('/api/test', (req, res) => {
+    res.send('Hello from HTTPS!');
+});
+
 app.use(express.json());
 
 // Database Connection
@@ -57,4 +70,16 @@ app.post('/api/feedback', async (req, res) => {
     }
   });
   
+  https.createServer(options, app).listen(443, () => {
+    console.log('Server running on https://secret-store.web.id');
+});
+
+// (Opsional) Mulai server HTTP untuk redirect ke HTTPS
+
+http.createServer((req, res) => {
+    res.writeHead(301, { Location: `https://${req.headers.host}${req.url}` });
+    res.end();
+}).listen(80, () => {
+    console.log('Redirecting HTTP to HTTPS...');
+});
   
