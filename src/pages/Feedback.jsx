@@ -31,18 +31,21 @@ const Feedback = () => {
 
   // Memuat feedback dari localStorage saat halaman pertama kali dibuka
   useEffect(() => {
-    const storedFeedbacks = localStorage.getItem("feedbacks");
-    if (storedFeedbacks) {
-      setFeedbacks(JSON.parse(storedFeedbacks));
-    }
+    const fetchFeedbacks = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/api/feedback");
+        const data = await response.json();
+        setFeedbacks(data); // Memperbarui state dengan data dari backend
+      } catch (error) {
+        console.error("Error fetching feedbacks:", error);
+      }
+    };
+  
+    fetchFeedbacks();
   }, []);
+  
 
-  // Menyimpan feedback ke localStorage setiap kali `feedbacks` diperbarui
-  useEffect(() => {
-    localStorage.setItem("feedbacks", JSON.stringify(feedbacks));
-  }, [feedbacks]);
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
   
     if (!username.trim()) {
@@ -50,55 +53,44 @@ const Feedback = () => {
       return;
     }
   
+    const newFeedback = { username, comment };
   
-    // Jika username adalah "iStrange", minta password
-    if (username === "iStrange") {
-      const inputPassword = prompt("Enter your password to submit feedback:");
-      const correctPassword = "nizar1234"; // Ganti dengan password yang Anda tentukan
+    try {
+      const response = await fetch("http://localhost:5000/api/feedback", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newFeedback),
+      });
   
-      if (inputPassword !== correctPassword) {
-        alert("Incorrect password. Feedback was not submitted.");
-        return;
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || "Failed to save feedback");
       }
+  
+      const savedFeedback = await response.json();
+      setFeedbacks([savedFeedback, ...feedbacks]); // Tambahkan feedback baru ke state
+      setUsername("");
+      setComment("");
+      setError(""); // Reset error setelah pengiriman berhasil
+      setShowNotification(true);
+  
+      // Hilangkan notifikasi setelah 3 detik
+      setTimeout(() => {
+        setShowNotification(false);
+      }, 3000);
+    } catch (error) {
+      console.error("Error saving feedback:", error.message);
+      setError("Failed to save feedback. Please try again.");
     }
-  
-    let profileImage;
-    if (username === "iStrange") {
-      profileImage = "./istrangeprofile.gif"; // Ganti dengan path gambar khusus untuk iStrange
-    } else {
-      const profileImages = [
-        "./profile1.png",
-        "./profile2.png",
-        "./profile3.jpg",
-      ];
-      profileImage =
-        profileImages[Math.floor(Math.random() * profileImages.length)];
-    }
-  
-    const now = new Date();
-    const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
-    const formattedDate = now.toLocaleDateString(undefined, options);
-    const formattedTime = now.toLocaleTimeString();
-  
-    const newFeedback = {
-      id: Date.now(),
-      username,
-      comment,
-      profile: profileImage,
-      timestamp: `${formattedDate} at ${formattedTime}`,
-    };
-  
-    setFeedbacks([newFeedback, ...feedbacks]);
-    setUsername("");
-    setComment("");
-    setError(""); // Reset error setelah pengiriman berhasil
-    setShowNotification(true);
-  
-    // Sembunyikan notifikasi setelah 3 detik
-    setTimeout(() => {
-      setShowNotification(false);
-    }, 3000);
   };
+  
+
+
+  
+  
+
   
 
   // Fungsi untuk menghapus feedback dengan konfirmasi password
