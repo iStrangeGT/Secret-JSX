@@ -56,7 +56,7 @@ const Feedback = () => {
     const newFeedback = { username, comment };
   
     try {
-      const response = await fetch("http://secret-store.web.id/api/feedback", {
+      const response = await fetch("https://secret-store.web.id/api/feedback", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
