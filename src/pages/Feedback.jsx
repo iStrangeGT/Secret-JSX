@@ -16,8 +16,7 @@ const Feedback = () => {
     { name: "Growtopia", link: "/growtopia", icon: FiServer },
     { name: "Feedback", link: "/feedback", icon: FiMessageSquare },
    
-    { name: "Settings", link: "/error", icon: RiSettings4Line, margin: true },
-    { name: "Account", link: "/error", icon: AiOutlineUser },
+    { name: "Settings", link: "/error", icon: RiSettings4Line },
   ];
 
   const [open, setOpen] = useState(true);
@@ -65,12 +64,12 @@ const Feedback = () => {
   
     let profileImage;
     if (username === "iStrange") {
-      profileImage = "./Verified.gif"; // Ganti dengan path gambar khusus untuk iStrange
+      profileImage = "./istrangeprofile.gif"; // Ganti dengan path gambar khusus untuk iStrange
     } else {
       const profileImages = [
-        "./DigitalOcean.png",
-        "/images/profile2.png",
-        "/images/profile3.png",
+        "./profile1.png",
+        "./profile2.png",
+        "./profile3.jpg",
       ];
       profileImage =
         profileImages[Math.floor(Math.random() * profileImages.length)];
@@ -253,6 +252,7 @@ const Feedback = () => {
           )}
         </AnimatePresence>
       </form>
+      
     {/* Daftar Feedback */}
 <div className="w-2/3">
   <h3 className="text-xl font-bold mb-4 text-gray-700">Feedbacks</h3>
@@ -262,7 +262,7 @@ const Feedback = () => {
     feedbacks.map((feedback) => (
       <div
         key={feedback.id}
-        className="flex items-start mb-4 bg-gray-50 p-4 rounded-md shadow-sm"
+        className="flex items-start mb-4 bg-white/70 p-4 rounded-md shadow-sm"
       >
         <img
           src={feedback.profile}
@@ -288,7 +288,7 @@ const Feedback = () => {
         </div>
         <button
           onClick={() => handleDelete(feedback.id)}
-          className="ml-4 text-red-500 hover:text-red-700"
+          className="ml-4 text-white/10 hover:text-white/60"
         >
           Delete
         </button>

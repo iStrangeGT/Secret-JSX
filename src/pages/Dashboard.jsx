@@ -15,8 +15,7 @@ const Dashboard = () => {
     { name: "Growtopia", link: "/growtopia", icon: FiServer },
     { name: "Feedback", link: "/feedback", icon: FiMessageSquare },
    
-    { name: "Settings", link: "/error", icon: RiSettings4Line, margin: true },
-    { name: "Account", link: "/error", icon: AiOutlineUser },
+    { name: "Settings", link: "/error", icon: RiSettings4Line },
   ];
 
   const [open, setOpen] = useState(true);
