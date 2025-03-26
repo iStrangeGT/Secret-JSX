@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const Payment = () => {
   const [orderDetails, setOrderDetails] = useState(null);
@@ -36,11 +37,12 @@ const Payment = () => {
     return <p className="text-center text-gray-500">No order details found.</p>;
   }
 
+  // Construct WhatsApp message dynamically
   const whatsAppMessage = `https://wa.me/6288269956317?text=Bang%20gw%20udah%20bayar%20nih%20untuk%20produk%20${encodeURIComponent(
     orderDetails.productName
-  )}%20sebesar%20${encodeURIComponent(orderDetails.price)}%20OS%20yang%20dipilih%20adalah%20${encodeURIComponent(
-    orderDetails.selectedOS
-  )}%20via%20${selectedPayment}.`;
+  )}%20sebesar%20${encodeURIComponent(orderDetails.price)}${
+    orderDetails.selectedOS ? `%20OS%20yang%20dipilih%20adalah%20${encodeURIComponent(orderDetails.selectedOS)}` : ""
+  }%20via%20${selectedPayment}.`;
 
   return (
     <div className="min-h-screen flex items-center justify-center">
@@ -56,7 +58,9 @@ const Payment = () => {
         <div className="text-gray-600">
           <p className="mb-2">Product: {orderDetails.productName}</p>
           <p className="mb-2">Price: {orderDetails.price}</p>
-          <p className="mb-4">Operating System: {orderDetails.selectedOS}</p>
+          {orderDetails.selectedOS && (
+            <p className="mb-4">Operating System: {orderDetails.selectedOS}</p>
+          )}
         </div>
         <h3 className="text-lg font-semibold text-gray-500 mb-4">Choose Payment Method</h3>
         <div className="space-y-3">
@@ -86,7 +90,12 @@ const Payment = () => {
           </button>
         </div>
         {showQR && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <motion.div
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+          >
             <div className="bg-white/70 p-6 rounded-lg shadow-lg w-80">
               <h3 className="text-lg font-bold text-blue-800 mb-4">
                 Scan QR for {selectedPayment}
@@ -94,6 +103,13 @@ const Payment = () => {
               <div className="flex justify-center mb-4">
                 <img src={qrImage} alt={`${selectedPayment} QR`} className="w-48 h-48" />
               </div>
+              <a
+                href={qrImage}
+                download={`${selectedPayment}-QR.jpg`}
+                className="block bg-gray-500 text-white py-2 px-4 rounded-lg text-center hover:bg-gray-600 mb-4"
+              >
+                Download QR
+              </a>
               <a
                 href={whatsAppMessage}
                 target="_blank"
@@ -109,7 +125,7 @@ const Payment = () => {
                 Close
               </button>
             </div>
-          </div>
+          </motion.div>
         )}
       </div>
     </div>

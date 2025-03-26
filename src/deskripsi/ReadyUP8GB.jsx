@@ -1,37 +1,17 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
-const Indo61GB = () => {
-  const [selectedOption, setSelectedOption] = useState("");
+const ReadyUP8GB = () => {
   const [showModal, setShowModal] = useState(false);
-  const [warning, setWarning] = useState(false);
-  const operatingSystems = {
-    Windows: ["Windows Server 2010", "Windows Server 2011", "Windows Server 2012 R2", "Windows Server 2016", "Windows Server 2019","Windows Server 2022"],
-    Linux: ["AlmaLinux 8.x", "AlmaLinux 9.x", "Rocky Linux 8.x", "Rocky Linux 9.x"],
-    Ubuntu: ["Ubuntu 24.10", "Ubuntu 24.04 LTS", "Ubuntu 22.04 LTS", "Ubuntu 20.04 LTS"],
-    Debian: ["Debian 11 (Bullseye)", "Debian 12 (Bookworm)"],
-    Fedora: ["Fedora 40 (x64)", "Fedora 41 (x64)"],
-    CentOS: ["CentOS Stream 9"],
-  };
-
-  const handleChange = (event) => {
-    setSelectedOption(event.target.value);
-    setWarning(false); // Clear warning when an option is selected
-  };
 
   const handleBuyNow = () => {
-    if (!selectedOption) {
-      setWarning(true); // Show warning if no OS is selected
-    } else {
-      const orderDetails = {
-        productName: "VPS/RDP 61GB 11vCORE",
-        price: "RP.970.000",
-        selectedOS: selectedOption,
-      };
-      localStorage.setItem("orderDetails", JSON.stringify(orderDetails));
-      setShowModal(true);
-    }
+    const orderDetails = {
+      productName: "VPS/RDP 8GB With Good CPP",
+      price: "RP.100.000",
+    };
+    localStorage.setItem("orderDetails", JSON.stringify(orderDetails));
+    setShowModal(true);
   };
 
   const closeModal = () => {
@@ -43,43 +23,17 @@ const Indo61GB = () => {
       <div className="max-w-screen-xl px-4 mx-auto 2xl:px-0">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
           <div className="shrink-0 max-w-md lg:max-w-lg mx-auto">
-            <img className="w-full" src="./server.png" alt="pepek" />
+            <img className="w-full" src="./growtopialogo.png" alt="dawg" />
           </div>
 
           <div className="mt-6 sm:mt-8 lg:mt-0">
-            <h1 className="text-xl font-semibold text-red-600 sm:text-2xl">
-              [IndonesiaRegion] <span className="text-gray-500">VPS/RDP 61GB 11vCORE</span>
+            <h1 className="text-xl font-semibold text-blue-800 sm:text-2xl">
+              [READY UP] <span className="text-gray-500">VPS/RDP 8GB With Good CPP</span>
             </h1>
             <div className="mt-4 sm:items-center sm:gap-4 sm:flex">
-              <p className="text-2xl font-extrabold text-gray-500 sm:text-3xl">RP.970.000</p>
+              <p className="text-2xl font-extrabold text-gray-500 sm:text-3xl">RP.100.000</p>
             </div>
-            <div className="max-w-md mt-4">
-              <h2 className="text-xl text-gray-500 font-bold mb-4">Select Operating System</h2>
-              <select
-                value={selectedOption}
-                onChange={handleChange}
-                className="w-full border border-gray-300 rounded-md px-4 py-2 text-gray-500 focus:outline-none focus:ring focus:ring-blue-200"
-              >
-                <option value="" disabled>
-                  Choose an option
-                </option>
-                {Object.entries(operatingSystems).map(([os, versions]) => (
-                  <optgroup key={os} label={os}>
-                    {versions.map((version, index) => (
-                      <option key={index} value={version}>
-                        {version}
-                      </option>
-                    ))}
-                  </optgroup>
-                ))}
-              </select>
-              {warning && (
-                <p className="mt-2 text-red-500">Please select an operating system before proceeding.</p>
-              )}
-              {selectedOption && (
-                <p className="mt-4 text-gray-500">You selected: {selectedOption}</p>
-              )}
-            </div>
+
             <div className="mt-4 sm:gap-4 sm:items-center sm:flex sm:mt-8">
               <button
                 onClick={handleBuyNow}
@@ -110,13 +64,14 @@ const Indo61GB = () => {
 
             <p className="mb-6 text-gray-500">
               Description:
-              <p>- 61GB RAM</p>
-              <p>- 11 vCore Epyc</p>
-              <p>- Storage 400GB NVMe</p>
-              <p>- BandWidth 11TB</p>
-              <p>- Amd Epyc 7320 Processor</p>
-              <p>- Active 30 Day</p>
-              <p>- Guarantee 30 Day Full Replace</p>
+              <p>- 8GB RAM</p>
+              <p>- 4 vCore</p>
+              <p>- Storage 240GB NVMe</p>
+              <p>- BandWidth 6TB</p>
+              <p>- Intel Premium Processor</p>
+              <p>- Active 28 - 30 Day</p>
+              <p>- Guarantee 5 Day 1x Replace</p>
+              <p>- Free Coder 1Week</p>
             </p>
             <p class="mb-6 text-gray-500 ">
          ⛔Terms of Service⛔
@@ -140,17 +95,16 @@ const Indo61GB = () => {
       </div>
 
       {showModal && (
-        <motion.div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0, scale: 0.8 }}
-      >
+         <motion.div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center"
+         initial={{ opacity: 0, scale: 0.8 }}
+         animate={{ opacity: 1, scale: 1 }}
+         exit={{ opacity: 0, scale: 0.8 }}
+       >
           <div className="bg-white/70 rounded-lg shadow-lg p-6 w-96">
             <h2 className="text-xl font-bold mb-4 text-blue-800">Order Details</h2>
             <div className="text-gray-600">
-            <p className="mb-2">Product: VPS/RDP 61GB 11vCORE</p>
-            <p className="mb-2">Price: RP.970.000</p>
-            <p className="mb-4">Selected OS: {selectedOption || "None"}</p>
+              <p className="mb-2">Product: VPS/RDP 8GB With Good CPP</p>
+              <p className="mb-3">Price: RP.100.000</p>
             </div>
             <div className="flex justify-between">
               <button
@@ -160,9 +114,8 @@ const Indo61GB = () => {
                 Close
               </button>
               <Link to="/payment">
-              <button
-           
-                className="text-white mt-4 sm:mt-0 bg-blue-800 hover:bg-blue-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 flex items-center justify-center"
+                <button
+                  className="text-white mt-4 sm:mt-0 bg-blue-800 hover:bg-blue-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 flex items-center justify-center"
                 >
                   <svg
                     className="w-5 h-5 -ms-2 me-2"
@@ -183,13 +136,17 @@ const Indo61GB = () => {
                   </svg>
                   Buy Now
                 </button>
-                </Link>
+              </Link>
+              
             </div>
+            
           </div>
-        </motion.div>
+          
+          </motion.div>
+        
       )}
     </section>
   );
 };
 
-export default Indo61GB;
+export default ReadyUP8GB;

@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Indo9GB = () => {
   const [selectedOption, setSelectedOption] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [warning, setWarning] = useState(false);
   const operatingSystems = {
-    Windows: ["Windows 1", "Windows 2", "Windows 3"],
-    Linux: ["Linux 1", "Linux 2", "Linux 3"],
-    Ubuntu: ["Ubuntu 1", "Ubuntu 2", "Ubuntu 3"],
+    Windows: ["Windows Server 2010", "Windows Server 2011", "Windows Server 2012 R2", "Windows Server 2016", "Windows Server 2019","Windows Server 2022"],
+    Linux: ["AlmaLinux 8.x", "AlmaLinux 9.x", "Rocky Linux 8.x", "Rocky Linux 9.x"],
+    Ubuntu: ["Ubuntu 24.10", "Ubuntu 24.04 LTS", "Ubuntu 22.04 LTS", "Ubuntu 20.04 LTS"],
+    Debian: ["Debian 11 (Bullseye)", "Debian 12 (Bookworm)"],
+    Fedora: ["Fedora 40 (x64)", "Fedora 41 (x64)"],
+    CentOS: ["CentOS Stream 9"],
   };
 
   const handleChange = (event) => {
@@ -136,7 +140,11 @@ const Indo9GB = () => {
       </div>
 
       {showModal && (
-        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
+        <motion.div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.8 }}
+      >
           <div className="bg-white/70 rounded-lg shadow-lg p-6 w-96">
             <h2 className="text-xl font-bold mb-4 text-blue-800">Order Details</h2>
             <div className="text-gray-600">
@@ -178,7 +186,7 @@ const Indo9GB = () => {
                 </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       )}
     </section>
   );
