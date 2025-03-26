@@ -9,11 +9,7 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors({
-    origin: ["https://secret-store.web.id"], // Ganti dengan domain frontend Anda
-    methods: ["GET", "POST", "DELETE"],
-    credentials: true, // Jika menggunakan cookie
-  }));
+app.use(cors());
 app.use(express.json());
 
 // Database Connection
