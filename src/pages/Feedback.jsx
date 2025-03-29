@@ -8,6 +8,50 @@ import { FiMessageSquare, FiServer, FiHome, FiShoppingCart } from "react-icons/f
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
+const socialIcons = {
+  Twitter: "https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg",
+  GitHub: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+  LinkedIn: "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
+};
+
+const comments = [
+  {
+    id: 1,
+    profile: "https://via.placeholder.com/50",
+    name: "John Doe",
+    comment: "This is a great post!",
+    date: "2025-03-28",
+    verified: true,
+    roles: ["Admin", "Contributor"],
+    socialMedia: [
+      { platform: "Twitter", link: "https://twitter.com/johndoe" },
+      { platform: "GitHub", link: "https://github.com/johndoe" },
+    ],
+  },
+  {
+    id: 2,
+    profile: "https://via.placeholder.com/50",
+    name: "Jane Smith",
+    comment: "Thanks for sharing this information.",
+    date: "2025-03-29",
+    verified: false,
+    roles: ["Member"],
+    socialMedia: [
+      { platform: "LinkedIn", link: "https://linkedin.com/in/janesmith" },
+    ],
+  },
+  {
+    id: 3,
+    profile: "https://via.placeholder.com/50",
+    name: "Michael Brown",
+    comment: "I found this very helpful!",
+    date: "2025-03-30",
+    verified: false,
+    roles: ["Subscriber"],
+    socialMedia: [],
+  },
+];
+
 const Feedback = () => {
   const menus = [
     { name: "Dashboard", link: "/dashboard", icon: FiHome },
@@ -20,118 +64,16 @@ const Feedback = () => {
   ];
 
   const [open, setOpen] = useState(true);
-  const [feedbacks, setFeedbacks] = useState([]);
-  const [username, setUsername] = useState("");
-  const [comment, setComment] = useState("");
-  const [error, setError] = useState("");
-  const [showNotification, setShowNotification] = useState(false);
+  const [popupData, setPopupData] = useState(null);
 
-  // Password untuk menghapus feedback
-  const deletePassword = "tanyabapaklu"; // Ganti dengan password Anda
+  const handleNameClick = (comment) => {
+    setPopupData(comment);
+  };
 
-  // Memuat feedback dari localStorage saat halaman pertama kali dibuka
+  const closePopup = () => {
+    setPopupData(null);
+  };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-  
-    if (!username.trim()) {
-      setError("Name is required.");
-      return;
-    }
-  
-    // Jika username adalah "iStrange", minta password
-    if (username === "iStrange") {
-      const inputPassword = prompt("Enter your password to submit feedback:");
-      const correctPassword = "nizar1234"; // Ganti dengan password yang Anda tentukan
-  
-      if (inputPassword !== correctPassword) {
-        alert("Incorrect password. Feedback was not submitted.");
-        return;
-      }
-    }
-  
-    let profileImage;
-    if (username === "iStrange") {
-      profileImage = "./istrangeprofile.gif";
-    } else {
-      const profileImages = [
-        "./profile1.png",
-        "./profile2.png",
-        "/profile3.jpg",
-      ];
-      profileImage =
-        profileImages[Math.floor(Math.random() * profileImages.length)];
-    }
-  
-    try {
-      const response = await fetch("https://secret-jsx-backend-jr28pojsz-istranges-projects.vercel.app/api/feedbacks", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          username,
-          comment,
-          profile: profileImage,
-        }),
-      });
-  
-      if (response.ok) {
-        const data = await response.json();
-        setFeedbacks([data.feedback, ...feedbacks]);
-        setUsername("");
-        setComment("");
-        setError(""); 
-        setShowNotification(true);
-        setTimeout(() => {
-          setShowNotification(false);
-        }, 3000);
-      } else {
-        alert("Failed to submit feedback. Please try again.");
-      }
-    } catch (error) {
-      console.error("Error submitting feedback:", error);
-      alert("An error occurred while submitting feedback.");
-    }
-  };
-  
-  const fetchFeedbacks = async () => {
-    try {
-      const response = await fetch("https://secret-jsx-backend-jr28pojsz-istranges-projects.vercel.app/api/feedbacks");
-      if (response.ok) {
-        const data = await response.json();
-        setFeedbacks(data.feedbacks);
-      }
-    } catch (error) {
-      console.error("Error fetching feedbacks:", error);
-    }
-  };
-  
-  const handleDelete = async (id) => {
-    const inputPassword = prompt("Enter the password to delete this feedback:");
-    if (inputPassword === deletePassword) {
-      try {
-        const response = await fetch(`https://secret-jsx-backend-jr28pojsz-istranges-projects.vercel.app/api/feedbacks/${id}`, {
-          method: "DELETE",
-        });
-        if (response.ok) {
-          const updatedFeedbacks = feedbacks.filter((feedback) => feedback.id !== id);
-          setFeedbacks(updatedFeedbacks);
-        } else {
-          alert("Failed to delete feedback. Please try again.");
-        }
-      } catch (error) {
-        console.error("Error deleting feedback:", error);
-        alert("An error occurred while deleting feedback.");
-      }
-    } else {
-      alert("Incorrect password. Feedback was not deleted.");
-    }
-  };
-  
-  useEffect(() => {
-    fetchFeedbacks();
-  }, []);
   
   return (
     <div className="flex min-h-screen overflow-hidden">
@@ -203,120 +145,77 @@ const Feedback = () => {
 
           <h1 className="text-5xl mt-8 text-blue-800 font-bold">SECRETSTORE's Feedback</h1>
           <p className="text-gray-500 mt-2">Share Your Experience About SECRETSTORE Below!</p>
-
-          <div className="max-w-2xl  mt-2 ">
-      {/* Form Feedback */}
-      <form
-        onSubmit={handleSubmit}
-        className=" rounded px-8 py-6"
-      >
-
-        {/* Input Nama Pengguna */}
-        <div className="mb-4">
-          <label
-            htmlFor="username"
-            className="block text-gray-600 text-sm font-medium mb-2"
+          <div className="p-4 max-w-xl mx-auto relative">
+      <h1 className="text-2xl font-bold mb-4">Comments</h1>
+      <div className="space-y-4">
+        {comments.map((comment) => (
+          <div
+            key={comment.id}
+            className="flex items-start space-x-4 p-4 bg-white rounded-2xl shadow-md"
           >
-            Your Name <span className="text-red-500">*</span>
-          </label>
-          <input
-            id="username"
-            type="text"
-            placeholder="Enter your name"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 ${
-              error ? "border-red-500 bg-white/70 focus:ring-red-500" : "border-gray-300 bg-white/70 focus:ring-blue-500"
-            }`}
-          />
-          {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
-        </div>
-
-        {/* Input Feedback */}
-        <div className="mb-4">
-          <label
-            htmlFor="comment"
-            className="block text-gray-600 text-sm font-medium mb-2"
-          >
-            Feedback
-          </label>
-          <textarea
-            id="comment"
-            rows="4"
-            placeholder="Enter your feedback"
-            value={comment}
-            onChange={(e) => setComment(e.target.value)}
-            className="w-full bg-white/70 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-          ></textarea>
-        </div>
-
-        {/* Tombol Kirim */}
-        <button
-          type="submit"
-          className="w-full bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-700"
-        >
-          Submit Feedback
-        </button>
-            {/* Notifikasi dengan Animasi */}
-        <AnimatePresence>
-          {showNotification && (
-            <motion.div
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -50 }}
-              transition={{ duration: 0.5 }}
-              className="absolute top-0 left-0 right-0 bg-green-500 text-white text-center py-2 rounded-md mt-4"
-            >
-              Terima kasih telah feedback di Secret Store!
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </form>
-      
-    {/* Daftar Feedback */}
-<div className="w-2/3">
-  <h3 className="text-xl font-bold mb-4 text-gray-700">Feedbacks</h3>
-  {feedbacks.length === 0 ? (
-    <p className="text-gray-500">No feedbacks yet.</p>
-  ) : (
-    feedbacks.map((feedback) => (
-      <div
-        key={feedback.id}
-        className="flex items-start mb-4 bg-white/70 p-4 rounded-md shadow-sm"
-      >
-        <img
-          src={feedback.profile}
-          alt="Profile"
-          className="w-12 h-12 rounded-full mr-4"
-        />
-        <div className="flex-grow">
-          <div className="flex items-center">
-            <h4 className="font-semibold text-gray-800">{feedback.username}</h4>
-            {/* Logo Verified */}
-            {feedback.username === "iStrange" && (
-              <img
-                src="./Verified.gif"
-                alt="Verified"
-                className="ml-1 w-4 h-4"
-              />
-            )}
+            <img
+              src={comment.profile}
+              alt={`${comment.name} profile`}
+              className="w-12 h-12 rounded-full"
+            />
+            <div>
+              <h2
+                className="text-lg font-semibold flex items-center space-x-2 cursor-pointer"
+                onClick={() => handleNameClick(comment)}
+              >
+                <span>{comment.name}</span>
+                {comment.verified && (
+                  <img
+                    src="Verified.gif"
+                    alt="Verified"
+                    className="w-4 h-4"
+                  />
+                )}
+              </h2>
+              <p className="text-gray-600 text-sm">{comment.comment}</p>
+              <p className="text-gray-400 text-xs mt-1">{comment.date}</p>
+            </div>
           </div>
-          <p className="text-gray-600">{feedback.comment}</p>
-          <p className="text-sm text-gray-500">
-              {feedback.timestamp}
-            </p>
-        </div>
-        <button
-          onClick={() => handleDelete(feedback.id)}
-          className="ml-4 text-white/10 hover:text-white/60"
-        >
-          Delete
-        </button>
+        ))}
       </div>
-    ))
-  )}
-</div>
-</div>
+
+      {popupData && (
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+          <div className="bg-white rounded-2xl p-4 shadow-md w-80">
+            <h2 className="text-xl font-bold mb-2">{popupData.name}</h2>
+            <p className="text-sm text-gray-600 mb-2">Roles:</p>
+            <ul className="list-disc list-inside mb-2">
+              {popupData.roles.map((role, index) => (
+                <li key={index} className="text-sm text-gray-800">{role}</li>
+              ))}
+            </ul>
+            <p className="text-sm text-gray-600 mb-2">Social Media:</p>
+            <div className="flex flex-wrap gap-2">
+              {popupData.socialMedia.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+                >
+                  {social.platform}
+                </a>
+              ))}
+              {popupData.socialMedia.length === 0 && (
+                <span className="text-gray-500">No social media links available.</span>
+              )}
+            </div>
+            <button
+              className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-xl hover:bg-blue-600"
+              onClick={closePopup}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
         </main>
       </div>
     </div>
@@ -325,5 +224,12 @@ const Feedback = () => {
 };
 
 export default Feedback;
+
+
+
+
+
+
+
 
 
