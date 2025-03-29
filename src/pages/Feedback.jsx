@@ -64,7 +64,7 @@ const Feedback = () => {
     }
   
     try {
-      const response = await fetch("https://secret-jsx-backend-b1fqmdp6e-istranges-projects.vercel.app/api/feedbacks", {
+      const response = await fetch("https://secret-jsx-backend-jr28pojsz-istranges-projects.vercel.app/api/feedbacks", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -97,7 +97,7 @@ const Feedback = () => {
   
   const fetchFeedbacks = async () => {
     try {
-      const response = await fetch("https://secret-jsx-backend-b1fqmdp6e-istranges-projects.vercel.app/api/feedbacks");
+      const response = await fetch("https://secret-jsx-backend-jr28pojsz-istranges-projects.vercel.app/api/feedbacks");
       if (response.ok) {
         const data = await response.json();
         setFeedbacks(data.feedbacks);
@@ -111,7 +111,7 @@ const Feedback = () => {
     const inputPassword = prompt("Enter the password to delete this feedback:");
     if (inputPassword === deletePassword) {
       try {
-        const response = await fetch(`https://secret-jsx-backend-b1fqmdp6e-istranges-projects.vercel.app/api/feedbacks/${id}`, {
+        const response = await fetch(`https://secret-jsx-backend-jr28pojsz-istranges-projects.vercel.app/api/feedbacks/${id}`, {
           method: "DELETE",
         });
         if (response.ok) {

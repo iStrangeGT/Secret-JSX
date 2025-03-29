@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
         '/api': {
-            target: 'https://secret-jsx-backend-b1fqmdp6e-istranges-projects.vercel.app/', // Ganti dengan URL backend
+            target: 'https://secret-jsx-backend-jr28pojsz-istranges-projects.vercel.app/', // Ganti dengan URL backend
             changeOrigin: true,
             secure: false
         }
