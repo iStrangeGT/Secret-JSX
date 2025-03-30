@@ -19,8 +19,8 @@ const comments = [
     verified: true,
     description: "Owner",
     socialMedia: [
-      { platform: "Youtube", link: "" },
-      { platform: "Instagram", link: "" },
+      { platform: "Youtube", link: "https://youtube.com/@istrangegt?feature=shared" },
+      { platform: "Instagram", link: "https://www.instagram.com/zarrhmnsyh?igsh=MWlmYmxkNG43b2hraw==" },
     ],
   },
 ];
@@ -174,7 +174,7 @@ const Feedback = () => {
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
               <button
-                className="absolute top-4 right-4 text-gray-600 hover:text-black text-2xl"
+                className="absolute top-1 right-4 text-gray-600 hover:text-black text-2xl"
                 onClick={() => setPopupData(null)}
               >
                 &times;
@@ -204,6 +204,7 @@ const Feedback = () => {
                   <textarea
                     name="message"
                     placeholder="Write your message..."
+                    style={{ resize: "none" }}
                     className="flex-1 p-2 focus:ring-0 text-gray-500 focus:outline-none text-sm"
                     rows="2"
                     required
