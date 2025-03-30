@@ -8,47 +8,20 @@ import { FiMessageSquare, FiServer, FiHome, FiShoppingCart } from "react-icons/f
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
-const socialIcons = {
-  Twitter: "https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg",
-  GitHub: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-  LinkedIn: "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
-};
-
 const comments = [
   {
     id: 1,
-    profile: "https://via.placeholder.com/50",
-    name: "John Doe",
-    comment: "This is a great post!",
-    date: "2025-03-28",
-    verified: true,
-    roles: ["Admin", "Contributor"],
-    socialMedia: [
-      { platform: "Twitter", link: "https://twitter.com/johndoe" },
-      { platform: "GitHub", link: "https://github.com/johndoe" },
-    ],
-  },
-  {
-    id: 2,
-    profile: "https://via.placeholder.com/50",
-    name: "Jane Smith",
-    comment: "Thanks for sharing this information.",
-    date: "2025-03-29",
-    verified: false,
-    roles: ["Member"],
-    socialMedia: [
-      { platform: "LinkedIn", link: "https://linkedin.com/in/janesmith" },
-    ],
-  },
-  {
-    id: 3,
-    profile: "https://via.placeholder.com/50",
-    name: "Michael Brown",
-    comment: "I found this very helpful!",
+    profile: "./istrangeprofile.gif",
+    banner: "./banner.gif",
+    name: "iStrange",
+    comment: "you",
     date: "2025-03-30",
-    verified: false,
-    roles: ["Subscriber"],
-    socialMedia: [],
+    verified: true,
+    description: "Owner",
+    socialMedia: [
+      { platform: "Youtube", link: "" },
+      { platform: "Instagram", link: "" },
+    ],
   },
 ];
 
@@ -64,17 +37,18 @@ const Feedback = () => {
   ];
 
   const [open, setOpen] = useState(true);
-  const [popupData, setPopupData] = useState(null);
-
-  const handleNameClick = (comment) => {
-    setPopupData(comment);
-  };
-
-  const closePopup = () => {
-    setPopupData(null);
-  };
+    const [popupData, setPopupData] = useState(null);
 
   
+    const handleCommentClick = (comment) => {
+      setPopupData(comment);
+    };
+    const closePopup = (e) => {
+      if (e.target.id === "popup-background") {
+        setPopupData(null);
+      }
+    };
+
   return (
     <div className="flex min-h-screen overflow-hidden">
       {/* Sidebar */}
@@ -145,13 +119,15 @@ const Feedback = () => {
 
           <h1 className="text-5xl mt-8 text-blue-800 font-bold">SECRETSTORE's Feedback</h1>
           <p className="text-gray-500 mt-2">Share Your Experience About SECRETSTORE Below!</p>
-          <div className="p-4 max-w-xl mx-auto relative">
-      <h1 className="text-2xl font-bold mb-4">Comments</h1>
+      
+          <div className="p-4 max-w-xl relative">
+      <h1 className="text-2xl font-bold text-gray-700 mt-3 mb-4">Feedbacks:</h1>
       <div className="space-y-4">
         {comments.map((comment) => (
           <div
             key={comment.id}
-            className="flex items-start space-x-4 p-4 bg-white rounded-2xl shadow-md"
+            className="flex items-start space-x-4 p-4 bg-white/50 rounded-2xl shadow-md cursor-pointer"
+            onClick={() => handleCommentClick(comment)}
           >
             <img
               src={comment.profile}
@@ -160,8 +136,8 @@ const Feedback = () => {
             />
             <div>
               <h2
-                className="text-lg font-semibold flex items-center space-x-2 cursor-pointer"
-                onClick={() => handleNameClick(comment)}
+                className="text-lg font-semibold flex items-center space-x-1 text-gray-800 cursor-pointer"
+                
               >
                 <span>{comment.name}</span>
                 {comment.verified && (
@@ -178,45 +154,79 @@ const Feedback = () => {
           </div>
         ))}
       </div>
-
-      {popupData && (
-        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-          <div className="bg-white rounded-2xl p-4 shadow-md w-80">
-            <h2 className="text-xl font-bold mb-2">{popupData.name}</h2>
-            <p className="text-sm text-gray-600 mb-2">Roles:</p>
-            <ul className="list-disc list-inside mb-2">
-              {popupData.roles.map((role, index) => (
-                <li key={index} className="text-sm text-gray-800">{role}</li>
-              ))}
-            </ul>
-            <p className="text-sm text-gray-600 mb-2">Social Media:</p>
-            <div className="flex flex-wrap gap-2">
-              {popupData.socialMedia.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
-                >
-                  {social.platform}
-                </a>
-              ))}
-              {popupData.socialMedia.length === 0 && (
-                <span className="text-gray-500">No social media links available.</span>
-              )}
-            </div>
-            <button
-              className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-xl hover:bg-blue-600"
-              onClick={closePopup}
+    
+      <AnimatePresence>
+        {popupData && (
+          <motion.div
+            id="popup-background"
+            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50"
+            onClick={closePopup}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <motion.div
+              className="bg-white rounded-2xl p-8 shadow-md w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3 relative"
+              onClick={(e) => e.stopPropagation()}
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: 50, opacity: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
             >
-              Close
-            </button>
-          </div>
-        </div>
-      )}
+              <button
+                className="absolute top-2 right-3 text-gray-600 hover:text-black text-2xl"
+                onClick={() => setPopupData(null)}
+              >
+                &times;
+              </button>
+              <div className="relative w-full h-24 mb-12">
+                <img src={popupData.banner} alt="Banner" className="w-full h-full object-cover rounded-2xl" />
+                <img
+                  src={popupData.profile}
+                  alt="Profile"
+                  className="w-24 h-24 rounded-full absolute bottom-[-50%] left-1/2 transform -translate-x-1/2 border-4 border-white"
+                />
+              </div>
+              <h2 className="text-2xl font-bold mt-12 text-center flex items-center text-gray-800 justify-center space-x-1">
+                <span>{popupData.name}</span>
+                {popupData.verified && (
+                  <img
+                    src="Verified.gif"
+                    alt="Verified"
+                    className="w-6 h-6"
+                  />
+                )}
+              </h2>
+              <p className="text-gray-600 text-center text-sm mb-10">{popupData.description}</p>
+
+              <p className="text-base text-gray-600 mb-2 text-center">Social Media:</p>
+              <div className="flex flex-wrap gap-4 justify-center">
+                {popupData.socialMedia.map((social, index) => (
+                  <a
+                    key={index}
+                    href={social.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 flex items-center space-x-2"
+                  >
+                    <img
+                      src={`/icons/${social.platform.toLowerCase()}.png`}
+                      alt={`${social.platform} icon`}
+                      className="w-6 h-6"
+                    />
+                    <span>{social.platform}</span>
+                  </a>
+                ))}
+                {popupData.socialMedia.length === 0 && (
+                  <span className="text-gray-500">No social media links available.</span>
+                )}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
-        </main>
+    </main>
       </div>
     </div>
     
