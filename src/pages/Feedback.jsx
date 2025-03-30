@@ -14,7 +14,7 @@ const comments = [
     profile: "./istrangeprofile.gif",
     banner: "./banner.gif",
     name: "iStrange",
-    comment: "you",
+    comment: "Sorry But This Feature is Still Underdevelopment! But You Guys Still Can Give Me a Feedback by Clicking My Feedback or Just join 1 of Our Platforms!",
     date: "2025-03-30",
     verified: true,
     description: "Owner",
@@ -187,7 +187,7 @@ const Feedback = () => {
                   className="w-24 h-24 rounded-full absolute bottom-[-50%] left-1/2 transform -translate-x-1/2 border-4 border-white"
                 />
               </div>
-              <h2 className="text-2xl font-bold mt-12 text-center flex items-center justify-center space-x-3">
+              <h2 className="text-2xl font-bold mt-12 text-center text-gray-800 flex items-center justify-center space-x-1">
                 <span>{popupData.name}</span>
                 {popupData.verified && (
                   <img
@@ -200,11 +200,11 @@ const Feedback = () => {
               <p className="text-gray-600 text-center text-sm mb-4">{popupData.description}</p>
 
               {popupData.name === "iStrange" && (
-                <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" className="flex items-center border rounded-md p-2">
+                <form action="https://formspree.io/f/xjkgnpgz" method="POST" className="flex items-center border rounded-md p-2">
                   <textarea
                     name="message"
                     placeholder="Write your message..."
-                    className="flex-1 p-2 focus:ring-0 focus:outline-none text-sm"
+                    className="flex-1 p-2 focus:ring-0 text-gray-500 focus:outline-none text-sm"
                     rows="2"
                     required
                   ></textarea>
