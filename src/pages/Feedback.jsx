@@ -154,7 +154,7 @@ const Feedback = () => {
           </div>
         ))}
       </div>
-    
+
       <AnimatePresence>
         {popupData && (
           <motion.div
@@ -174,20 +174,20 @@ const Feedback = () => {
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
               <button
-                className="absolute top-2 right-3 text-gray-600 hover:text-black text-2xl"
+                className="absolute top-4 right-4 text-gray-600 hover:text-black text-2xl"
                 onClick={() => setPopupData(null)}
               >
                 &times;
               </button>
               <div className="relative w-full h-24 mb-12">
-                <img src={popupData.banner} alt="Banner" className="w-full h-full object-cover rounded-2xl" />
+                <img src={popupData.banner} alt="Banner" className="w-full h-full object-cover rounded-t-2xl" />
                 <img
                   src={popupData.profile}
                   alt="Profile"
                   className="w-24 h-24 rounded-full absolute bottom-[-50%] left-1/2 transform -translate-x-1/2 border-4 border-white"
                 />
               </div>
-              <h2 className="text-2xl font-bold mt-12 text-center flex items-center text-gray-800 justify-center space-x-1">
+              <h2 className="text-2xl font-bold mt-12 text-center flex items-center justify-center space-x-3">
                 <span>{popupData.name}</span>
                 {popupData.verified && (
                   <img
@@ -197,9 +197,42 @@ const Feedback = () => {
                   />
                 )}
               </h2>
-              <p className="text-gray-600 text-center text-sm mb-10">{popupData.description}</p>
+              <p className="text-gray-600 text-center text-sm mb-4">{popupData.description}</p>
 
-              <p className="text-base text-gray-600 mb-2 text-center">Social Media:</p>
+              {popupData.name === "iStrange" && (
+                <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" className="flex items-center border rounded-md p-2">
+                  <textarea
+                    name="message"
+                    placeholder="Write your message..."
+                    className="flex-1 p-2 focus:ring-0 focus:outline-none text-sm"
+                    rows="2"
+                    required
+                  ></textarea>
+                  <button type="submit" className="text-gray-700 hover:text-gray-800">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M22 2L11 13"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M22 2L15 22L11 13L2 9L22 2Z"
+                      />
+                    </svg>
+                  </button>
+                </form>
+              )}
+
+              <p className="text-base text-gray-600 mt-5 mb-4 text-center">Social Media:</p>
               <div className="flex flex-wrap gap-4 justify-center">
                 {popupData.socialMedia.map((social, index) => (
                   <a
@@ -212,14 +245,11 @@ const Feedback = () => {
                     <img
                       src={`/icons/${social.platform.toLowerCase()}.png`}
                       alt={`${social.platform} icon`}
-                      className="w-6 h-6"
+                      className="w-5 h-5"
                     />
                     <span>{social.platform}</span>
                   </a>
                 ))}
-                {popupData.socialMedia.length === 0 && (
-                  <span className="text-gray-500">No social media links available.</span>
-                )}
               </div>
             </motion.div>
           </motion.div>
