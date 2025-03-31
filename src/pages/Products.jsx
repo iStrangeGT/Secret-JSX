@@ -94,9 +94,9 @@ const Products = () => {
       <div class="relative flex min-h-screen flex-col mt-5">
       <h2 className="text-2xl mt-5 mb-3 text-blue-400 flex font-bold">[DigitalOcean] <span className="mx-2 text-gray-700">VPS/RDP Packet 1</span></h2>
   <div class="carousel scrollbar-hide flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+  <div class="relative aspect-[1/1] w-[100%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="inset-0 flex items-center justify-center">
-      <div className="w-full rounded-lg shadow-sm">
+      <div className="w-full rounded-lg">
   <img
     className="p-8 rounded-t-lg"
     src="./DigitalOcean.png"
@@ -104,14 +104,13 @@ const Products = () => {
   />
   <div className="px-5 pb-5">
     
-      <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 4GB 2vCORE{" "}
-        <span className="text-red-600">[Out of Stock]</span>
-      </h5>
-    
-    <div className="flex items-center mt-2.5 mb-5">
+ <h5 className="text-xl font-semibold tracking-tight text-gray-500">
+                <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 4GB 2vCORE {0 === 0 ? <span className="text-red-600">[Out of Stock]</span> : null}
+              </h5>
+                 
+    <div className="flex items-center mt-2.5 ">
       <div className="flex items-center space-x-1">
-        {[...Array(3)].map((_, i) => (
+        {[...Array(4)].map((_, i) => (
           <svg
             key={i}
             className="w-4 h-4 text-yellow-300"
@@ -122,7 +121,7 @@ const Products = () => {
             <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
           </svg>
         ))}
-        {[...Array(2)].map((_, i) => (
+        {[...Array(1)].map((_, i) => (
           <svg
             key={i}
             className="w-4 h-4 text-gray-300"
@@ -135,25 +134,35 @@ const Products = () => {
         ))}
       </div>
       <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3">
-        3.0
+        3.9
+      </span>
+      <span className=" text-gray-500 text-sm ml-10 font-semibold px-2.5 py-0.5 rounded-sm ms-3">
+        Stock: 0
       </span>
     </div>
-    <div className="flex items-center justify-between">
-      <span className="text-3xl font-bold text-gray-500">RP.25.000</span>
-      <Link to="/packet1-4GB">
-      <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-        Buy Now
-      </button>
-      </Link>
+           
+              <div className="flex items-center justify-between mt-2.5">
+                <span className="text-3xl font-bold text-gray-500">RP.25.000</span>
+                {0 === 0 ? (
+                  <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                    Out of Stock
+                  </button>
+                ) : (
+                  <Link to="/packet1-4GB">
+                    <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                      Buy Now
+                    </button>
+                  </Link>
+                )}
     </div>
   </div>
 </div>
       </div>
     </div>
 
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[100%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
-      <div className="w-full rounded-lg shadow-sm">
+      <div className="w-full rounded-lg">
   <img
     className="p-8 rounded-t-lg"
     src="./DigitalOcean.png"
@@ -161,14 +170,13 @@ const Products = () => {
   />
   <div className="px-5 pb-5">
     
-      <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 8GB 4vCORE{" "}
-        <span className="text-red-600">[Out of Stock]</span>
-      </h5>
-   
-    <div className="flex items-center mt-2.5 mb-5">
+ <h5 className="text-xl font-semibold tracking-tight text-gray-500">
+                <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 8GB 4vCORE {0 === 0 ? <span className="text-red-600">[Out of Stock]</span> : null}
+              </h5>
+                 
+    <div className="flex items-center mt-2.5 ">
       <div className="flex items-center space-x-1">
-        {[...Array(3)].map((_, i) => (
+        {[...Array(5)].map((_, i) => (
           <svg
             key={i}
             className="w-4 h-4 text-yellow-300"
@@ -179,7 +187,7 @@ const Products = () => {
             <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
           </svg>
         ))}
-        {[...Array(2)].map((_, i) => (
+        {[...Array(0)].map((_, i) => (
           <svg
             key={i}
             className="w-4 h-4 text-gray-300"
@@ -192,16 +200,26 @@ const Products = () => {
         ))}
       </div>
       <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3">
-        3.0
+        4.9
+      </span>
+      <span className=" text-gray-500 text-sm ml-10 font-semibold px-2.5 py-0.5 rounded-sm ms-3">
+        Stock: 0
       </span>
     </div>
-    <div className="flex items-center justify-between">
-      <span className="text-3xl font-bold text-gray-500">RP.30.000</span>
-      <Link to="/packet1-8GB">
-      <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-        Buy Now
-      </button>
-      </Link>
+           
+              <div className="flex items-center justify-between mt-2.5">
+                <span className="text-3xl font-bold text-gray-500">RP.30.000</span>
+                {0 === 0 ? (
+                  <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                    Out of Stock
+                  </button>
+                ) : (
+                  <Link to="/packet1-4GB">
+                    <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                      Buy Now
+                    </button>
+                  </Link>
+                )}
     </div>
   </div>
 </div>
@@ -209,9 +227,9 @@ const Products = () => {
     </div>
 
 
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[100%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
-      <div className="w-full rounded-lg shadow-sm">
+      <div className="w-full rounded-lg">
   <img
     className="p-8 rounded-t-lg"
     src="./DigitalOcean.png"
@@ -219,14 +237,13 @@ const Products = () => {
   />
   <div className="px-5 pb-5">
     
-      <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 16GB 4vCORE{" "}
-        <span className="text-red-600">[Out of Stock]</span>
-      </h5>
-   
-    <div className="flex items-center mt-2.5 mb-5">
+ <h5 className="text-xl font-semibold tracking-tight text-gray-500">
+                <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 16GB 4vCORE {0 === 0 ? <span className="text-red-600">[Out of Stock]</span> : null}
+              </h5>
+                 
+    <div className="flex items-center mt-2.5 ">
       <div className="flex items-center space-x-1">
-        {[...Array(3)].map((_, i) => (
+        {[...Array(4)].map((_, i) => (
           <svg
             key={i}
             className="w-4 h-4 text-yellow-300"
@@ -237,7 +254,7 @@ const Products = () => {
             <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
           </svg>
         ))}
-        {[...Array(2)].map((_, i) => (
+        {[...Array(1)].map((_, i) => (
           <svg
             key={i}
             className="w-4 h-4 text-gray-300"
@@ -250,16 +267,26 @@ const Products = () => {
         ))}
       </div>
       <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3">
-        3.0
+        4.5
+      </span>
+      <span className=" text-gray-500 text-sm ml-10 font-semibold px-2.5 py-0.5 rounded-sm ms-3">
+        Stock: 0
       </span>
     </div>
-    <div className="flex items-center justify-between">
-      <span className="text-3xl font-bold text-gray-500">RP.35.000</span>
-      <Link to="/packet1-16GB">
-      <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-        Buy Now
-      </button>
-      </Link>
+           
+              <div className="flex items-center justify-between mt-2.5">
+                <span className="text-3xl font-bold text-gray-500">RP.35.000</span>
+                {0 === 0 ? (
+                  <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                    Out of Stock
+                  </button>
+                ) : (
+                  <Link to="/packet1-16GB">
+                    <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                      Buy Now
+                    </button>
+                  </Link>
+                )}
     </div>
   </div>
 </div>
@@ -270,66 +297,9 @@ const Products = () => {
 
   
   <div class="carousel scrollbar-hide flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+  <div class="relative aspect-[1/1] w-[100%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="inset-0 flex items-center justify-center">
-      <div className="w-full rounded-lg shadow-sm">
-  <img
-    className="p-8 rounded-t-lg"
-    src="./DigitalOcean.png"
-    alt="DigitalOcean VPS product"
-  />
-  <div className="px-5 pb-5">
-   
-      <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 4GB 2vCORE{" "}
-        <span className="text-red-600">[Out of Stock]</span>
-      </h5>
-   
-    <div className="flex items-center mt-2.5 mb-5">
-      <div className="flex items-center space-x-1">
-        {[...Array(3)].map((_, i) => (
-          <svg
-            key={i}
-            className="w-4 h-4 text-yellow-300"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 22 20"
-          >
-            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-          </svg>
-        ))}
-        {[...Array(2)].map((_, i) => (
-          <svg
-            key={i}
-            className="w-4 h-4 text-gray-300"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 22 20"
-          >
-            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-          </svg>
-        ))}
-      </div>
-      <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3">
-        3.0
-      </span>
-    </div>
-    <div className="flex items-center justify-between">
-      <span className="text-3xl font-bold text-gray-500">RP.60.000</span>
-      <Link to="/packet2-4GB">
-      <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-        Buy Now
-      </button>
-      </Link>
-    </div>
-  </div>
-</div>
-      </div>
-    </div>
-
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
-      <div class="absolute inset-0 flex items-center justify-center">
-      <div className="w-full rounded-lg shadow-sm">
+      <div className="w-full rounded-lg">
   <img
     className="p-8 rounded-t-lg"
     src="./DigitalOcean.png"
@@ -337,14 +307,13 @@ const Products = () => {
   />
   <div className="px-5 pb-5">
     
-      <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 8GB 4vCORE{" "}
-        <span className="text-red-600">[Out of Stock]</span>
-      </h5>
-   
-    <div className="flex items-center mt-2.5 mb-5">
+ <h5 className="text-xl font-semibold tracking-tight text-gray-500">
+                <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 4GB 2vCORE {0 === 0 ? <span className="text-red-600">[Out of Stock]</span> : null}
+              </h5>
+                 
+    <div className="flex items-center mt-2.5 ">
       <div className="flex items-center space-x-1">
-        {[...Array(3)].map((_, i) => (
+        {[...Array(4)].map((_, i) => (
           <svg
             key={i}
             className="w-4 h-4 text-yellow-300"
@@ -355,7 +324,7 @@ const Products = () => {
             <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
           </svg>
         ))}
-        {[...Array(2)].map((_, i) => (
+        {[...Array(1)].map((_, i) => (
           <svg
             key={i}
             className="w-4 h-4 text-gray-300"
@@ -368,43 +337,120 @@ const Products = () => {
         ))}
       </div>
       <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3">
-        3.0
+        4.4
+      </span>
+      <span className=" text-gray-500 text-sm ml-10 font-semibold px-2.5 py-0.5 rounded-sm ms-3">
+        Stock: 0
       </span>
     </div>
-    <div className="flex items-center justify-between">
-      <span className="text-3xl font-bold text-gray-500">RP.80.000</span>
-     <Link to="/packet2-8GB">
-      <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-        Buy Now
-      </button>
-      </Link>
+           
+              <div className="flex items-center justify-between mt-2.5">
+                <span className="text-3xl font-bold text-gray-500">RP.50.000</span>
+                {0 === 0 ? (
+                  <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                    Out of Stock
+                  </button>
+                ) : (
+                  <Link to="/packet2-4GB">
+                    <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                      Buy Now
+                    </button>
+                  </Link>
+                )}
     </div>
   </div>
 </div>
       </div>
     </div>
+
+
+    <div class="relative aspect-[1/1] w-[100%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="absolute inset-0 flex items-center justify-center">
+      <div className="w-full rounded-lg">
+  <img
+    className="p-8 rounded-t-lg"
+    src="./DigitalOcean.png"
+    alt="DigitalOcean VPS product"
+  />
+  <div className="px-5 pb-5">
+    
+ <h5 className="text-xl font-semibold tracking-tight text-gray-500">
+                <span className="text-blue-400">[DigitalOcean]</span> VPS/RDP 8GB 4vCORE {0 === 0 ? <span className="text-red-600">[Out of Stock]</span> : null}
+              </h5>
+                 
+    <div className="flex items-center mt-2.5 ">
+      <div className="flex items-center space-x-1">
+        {[...Array(5)].map((_, i) => (
+          <svg
+            key={i}
+            className="w-4 h-4 text-yellow-300"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 22 20"
+          >
+            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+          </svg>
+        ))}
+        {[...Array(0)].map((_, i) => (
+          <svg
+            key={i}
+            className="w-4 h-4 text-gray-300"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 22 20"
+          >
+            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+          </svg>
+        ))}
+      </div>
+      <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3">
+        4.8
+      </span>
+      <span className=" text-gray-500 text-sm ml-10 font-semibold px-2.5 py-0.5 rounded-sm ms-3">
+        Stock: 0
+      </span>
+    </div>
+           
+              <div className="flex items-center justify-between mt-2.5">
+                <span className="text-3xl font-bold text-gray-500">RP.70.000</span>
+                {0 === 0 ? (
+                  <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                    Out of Stock
+                  </button>
+                ) : (
+                  <Link to="/packet2-8GB">
+                    <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                      Buy Now
+                    </button>
+                  </Link>
+                )}
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+
    </div>
 
    <h2 className="text-2xl mt-5 mb-3 text-red-600 flex font-bold">[IndonesiaRegion] <span className="mx-2 text-gray-700">VPS/RDP</span></h2>
   <div class="carousel flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+  <div class="relative aspect-[1/1] w-[100%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="inset-0 flex items-center justify-center">
-      <div className="w-full rounded-lg shadow-sm">
-  <img
+      <div className="w-full rounded-lg">
+      <img
     className="p-8 rounded-t-lg"
     src="./server.png"
     alt="indo vps"
   />
   <div className="px-5 pb-5">
-   
-      <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-red-600">[IndonesiaRegion]</span> VPS/RDP 9GB 5vCORE{" "}
-        <span className="text-red-600">[Out of Stock]</span>
-      </h5>
     
-    <div className="flex items-center mt-2.5 mb-5">
+ <h5 className="text-xl font-semibold tracking-tight text-gray-500">
+                <span className="text-red-600">[IndonesiaRegion]</span> VPS/RDP 9GB 5vCORE {0 === 0 ? <span className="text-red-600">[Out of Stock]</span> : null}
+              </h5>
+                 
+    <div className="flex items-center mt-2.5 ">
       <div className="flex items-center space-x-1">
-        {[...Array(3)].map((_, i) => (
+        {[...Array(5)].map((_, i) => (
           <svg
             key={i}
             className="w-4 h-4 text-yellow-300"
@@ -415,7 +461,7 @@ const Products = () => {
             <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
           </svg>
         ))}
-        {[...Array(2)].map((_, i) => (
+        {[...Array(0)].map((_, i) => (
           <svg
             key={i}
             className="w-4 h-4 text-gray-300"
@@ -428,16 +474,26 @@ const Products = () => {
         ))}
       </div>
       <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3">
-        3.0
+        4.9
+      </span>
+      <span className=" text-gray-500 text-sm ml-10 font-semibold px-2.5 py-0.5 rounded-sm ms-3">
+        Stock: 0
       </span>
     </div>
-    <div className="flex items-center justify-between">
-      <span className="text-3xl font-bold text-gray-500">RP.170.000</span>
-      <Link to="/indo-9GB">
-      <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-        Buy Now
-      </button>
-      </Link>
+           
+              <div className="flex items-center justify-between mt-2.5">
+                <span className="text-3xl font-bold text-gray-500">RP.170.000</span>
+                {0 === 0 ? (
+                  <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                    Out of Stock
+                  </button>
+                ) : (
+                  <Link to="/indo-9GB">
+                    <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                      Buy Now
+                    </button>
+                  </Link>
+                )}
     </div>
   </div>
 </div>
@@ -446,24 +502,23 @@ const Products = () => {
 
 
 
-    <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[100%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
-      <div className="w-full rounded-lg shadow-sm">
-  <img
+      <div className="w-full rounded-lg">
+      <img
     className="p-8 rounded-t-lg"
-    s src="./server.png"
+    src="./server.png"
     alt="indo vps"
   />
   <div className="px-5 pb-5">
-   
-      <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-        <span className="text-red-600">[IndonesiaRegion]</span> VPS/RDP 17GB 7vCORE{" "}
-        <span className="text-red-600">[Out of Stock]</span>
-      </h5>
-   
-    <div className="flex items-center mt-2.5 mb-5">
+    
+ <h5 className="text-xl font-semibold tracking-tight text-gray-500">
+                <span className="text-red-600">[IndonesiaRegion]</span> VPS/RDP 17GB 7vCORE {0 === 0 ? <span className="text-red-600">[Out of Stock]</span> : null}
+              </h5>
+                 
+    <div className="flex items-center mt-2.5 ">
       <div className="flex items-center space-x-1">
-        {[...Array(3)].map((_, i) => (
+        {[...Array(5)].map((_, i) => (
           <svg
             key={i}
             className="w-4 h-4 text-yellow-300"
@@ -474,7 +529,7 @@ const Products = () => {
             <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
           </svg>
         ))}
-        {[...Array(2)].map((_, i) => (
+        {[...Array(0)].map((_, i) => (
           <svg
             key={i}
             className="w-4 h-4 text-gray-300"
@@ -487,16 +542,26 @@ const Products = () => {
         ))}
       </div>
       <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3">
-        3.0
+        4.9
+      </span>
+      <span className=" text-gray-500 text-sm ml-10 font-semibold px-2.5 py-0.5 rounded-sm ms-3">
+        Stock: 0
       </span>
     </div>
-    <div className="flex items-center justify-between">
-      <span className="text-3xl font-bold text-gray-500">RP.350.000</span>
-      <Link to="/indo-17GB">
-      <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-        Buy Now
-      </button>
-      </Link>
+           
+              <div className="flex items-center justify-between mt-2.5">
+                <span className="text-3xl font-bold text-gray-500">RP.350.000</span>
+                {0 === 0 ? (
+                  <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                    Out of Stock
+                  </button>
+                ) : (
+                  <Link to="/indo-17GB">
+                    <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                      Buy Now
+                    </button>
+                  </Link>
+                )}
     </div>
   </div>
 </div>
