@@ -18,6 +18,7 @@ import Indo61GB from "./deskripsi/Indo61GB";
 import Feedback from "./pages/Feedback";
 import Payment from "./pages/Payment";
 import ReadyUP8GB from "./deskripsi/ReadyUP8GB";
+import ReadyUP16GB from "./deskripsi/ReadyUP16GB";
 
 
 
@@ -45,6 +46,7 @@ const App = () => {
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/readyup-8GB" element={<ReadyUP8GB />} />
+        <Route path="/readyup-16GB" element={<ReadyUP16GB />} />
        
         
       </Routes>

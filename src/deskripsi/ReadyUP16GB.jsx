@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const ReadyUP8GB = () => {
+const ReadyUP16GB = () => {
   const [showModal, setShowModal] = useState(false);
 
   const handleBuyNow = () => {
     const orderDetails = {
-      productName: "VPS/RDP 8GB With Good CPP",
-      price: "RP.100.000",
+      productName: "VPS/RDP 16GB With Good CPP",
+      price: "RP.150.000",
     };
     localStorage.setItem("orderDetails", JSON.stringify(orderDetails));
     setShowModal(true);
@@ -28,10 +28,10 @@ const ReadyUP8GB = () => {
 
           <div className="mt-6 sm:mt-8 lg:mt-0">
             <h1 className="text-xl font-semibold text-blue-800 sm:text-2xl">
-              [READY UP] <span className="text-gray-500">VPS/RDP 8GB With Good CPP</span>
+              [READY UP] <span className="text-gray-500">VPS/RDP 16GB With Good CPP</span>
             </h1>
             <div className="mt-4 sm:items-center sm:gap-4 sm:flex">
-              <p className="text-2xl font-extrabold text-gray-500 sm:text-3xl">RP.100.000</p>
+              <p className="text-2xl font-extrabold text-gray-500 sm:text-3xl">RP.150.000</p>
             </div>
 
             <div className="mt-4 sm:gap-4 sm:items-center sm:flex sm:mt-8">
@@ -66,8 +66,8 @@ const ReadyUP8GB = () => {
               Description:
               <p>- 16GB RAM</p>
               <p>- 4 vCore</p>
-              <p>- Storage 200GB NVMe</p>
-              <p>- BandWidth 8TB</p>
+              <p>- Storage 240GB NVMe</p>
+              <p>- BandWidth 6TB</p>
               <p>- Intel Premium Processor</p>
               <p>- Active 28 - 30 Day</p>
               <p>- Guarantee 5 Day No Replace</p>
@@ -103,8 +103,8 @@ const ReadyUP8GB = () => {
           <div className="bg-white/90 rounded-lg shadow-lg p-6 w-96">
             <h2 className="text-xl font-bold mb-4 text-blue-800">Order Details</h2>
             <div className="text-gray-600">
-              <p className="mb-2">Product: VPS/RDP 8GB With Good CPP</p>
-              <p className="mb-3">Price: RP.100.000</p>
+              <p className="mb-2">Product: VPS/RDP 16GB With Good CPP</p>
+              <p className="mb-3">Price: RP.150.000</p>
             </div>
             <div className="flex justify-between">
               <button
@@ -149,4 +149,4 @@ const ReadyUP8GB = () => {
   );
 };
 
-export default ReadyUP8GB;
+export default ReadyUP16GB;
