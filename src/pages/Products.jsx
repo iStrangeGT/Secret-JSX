@@ -103,7 +103,7 @@ const Products = () => {
       <div class="relative flex min-h-screen flex-col mt-5">
       <h2 className="text-2xl mt-5 mb-3 text-blue-400 flex font-bold">[DigitalOcean] <span className="mx-2 text-gray-700">VPS/RDP Packet 1</span></h2>
   <div class="carousel scrollbar-hide flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-  <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+  <div class="relative aspect-[1/1] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
   <img
@@ -156,7 +156,7 @@ const Products = () => {
 
                 {0 === 0 ? (
                   <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                    Out of Stock
+                    Buy Now
                   </button>
                 ) : (
                   <Link to="/packet1-4GB">
@@ -171,7 +171,7 @@ const Products = () => {
       </div>
     </div>
 
-    <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
   <img
@@ -222,7 +222,7 @@ const Products = () => {
                 <span className="text-3xl font-bold text-gray-500">RP.30.000</span>
                 {0 === 0 ? (
                   <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                    Out of Stock
+                    Buy Now
                   </button>
                 ) : (
                   <Link to="/packet1-4GB">
@@ -238,7 +238,7 @@ const Products = () => {
     </div>
 
 
-    <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
   <img
@@ -289,7 +289,7 @@ const Products = () => {
                 <span className="text-3xl font-bold text-gray-500">RP.35.000</span>
                 {0 === 0 ? (
                   <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                    Out of Stock
+                    Buy Now
                   </button>
                 ) : (
                   <Link to="/packet1-16GB">
@@ -308,7 +308,7 @@ const Products = () => {
 
   
   <div class="carousel scrollbar-hide flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-  <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+  <div class="relative aspect-[1/1] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
   <img
@@ -359,7 +359,7 @@ const Products = () => {
                 <span className="text-3xl font-bold text-gray-500">RP.50.000</span>
                 {0 === 0 ? (
                   <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                    Out of Stock
+                   Buy Now
                   </button>
                 ) : (
                   <Link to="/packet2-4GB">
@@ -375,7 +375,7 @@ const Products = () => {
     </div>
 
 
-    <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
   <img
@@ -426,7 +426,7 @@ const Products = () => {
                 <span className="text-3xl font-bold text-gray-500">RP.70.000</span>
                 {0 === 0 ? (
                   <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                    Out of Stock
+                    Buy Now
                   </button>
                 ) : (
                   <Link to="/packet2-8GB">
@@ -445,7 +445,7 @@ const Products = () => {
 
    <h2 className="text-2xl mt-5 mb-3 text-red-600 flex font-bold">[IndonesiaRegion] <span className="mx-2 text-gray-700">VPS/RDP</span></h2>
   <div class="carousel flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-  <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+  <div class="relative aspect-[1/1] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
   <img
@@ -496,7 +496,7 @@ const Products = () => {
                 <span className="text-3xl font-bold text-gray-500">RP.170.000</span>
                 {0 === 0 ? (
                   <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                    Out of Stock
+                   Buy Now
                   </button>
                 ) : (
                   <Link to="/indo-9GB">
@@ -513,7 +513,7 @@ const Products = () => {
 
 
 
-    <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
       <img
@@ -564,7 +564,7 @@ const Products = () => {
                 <span className="text-3xl font-bold text-gray-500">RP.350.000</span>
                 {0 === 0 ? (
                   <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                    Out of Stock
+                    Buy Now
                   </button>
                 ) : (
                   <Link to="/indo-17GB">
@@ -578,7 +578,7 @@ const Products = () => {
 </div>
       </div>
     </div>
-    <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
       <img
@@ -629,7 +629,7 @@ const Products = () => {
                 <span className="text-3xl font-bold text-gray-500">RP.555.000</span>
                 {0 === 0 ? (
                   <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                    Out of Stock
+                   Buy Now
                   </button>
                 ) : (
                   <Link to="/indo-31GB">
@@ -643,7 +643,7 @@ const Products = () => {
 </div>
       </div>
     </div>
-    <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
       <img
@@ -694,7 +694,7 @@ const Products = () => {
                 <span className="text-3xl font-bold text-gray-500">RP.970.000</span>
                 {0 === 0 ? (
                   <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                    Out of Stock
+                   Buy Now
                   </button>
                 ) : (
                   <Link to="/indo-61GB">

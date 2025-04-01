@@ -104,7 +104,7 @@ const Growtopia = () => {
   <div class="carousel scrollbar-hide flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
 
 
-    <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
         <div class="inset-0 flex items-center justify-center">
         <div className="w-full rounded-lg">
         <img
@@ -155,7 +155,7 @@ const Growtopia = () => {
                   <span className="text-3xl font-bold text-gray-500">RP.100.000</span>
                   {0 === 1 ? (
                     <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                      Out of Stock
+                      Buy Now
                     </button>
                   ) : (
                     <Link to="/readyup-8GB">
@@ -171,7 +171,7 @@ const Growtopia = () => {
       </div>
 
 
-      <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="relative aspect-[1/1] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
         <div class="absolute inset-0 flex items-center justify-center">
         <div className="w-full rounded-lg">
         <img
@@ -222,7 +222,7 @@ const Growtopia = () => {
                   <span className="text-3xl font-bold text-gray-500">RP.150.000</span>
                   {0 === 1 ? (
                     <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                      Out of Stock
+                      Buy Now
                     </button>
                   ) : (
                     <Link to="/readyup-16GB">
@@ -243,7 +243,7 @@ const Growtopia = () => {
 
   
   <div class="carousel scrollbar-hide flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-  <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+  <div class="relative aspect-[1/1] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
         <div class="inset-0 flex items-center justify-center">
         <div className="w-full rounded-lg">
         <img
@@ -294,7 +294,7 @@ const Growtopia = () => {
                   <span className="text-3xl font-bold text-gray-500">RP.35.000</span>
                   {0 === 1 ? (
                     <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                      Out of Stock
+                     Buy Now
                     </button>
                   ) : (
                     <Link to="/cpp-core">
@@ -309,7 +309,7 @@ const Growtopia = () => {
         </div>
       </div>
 
-      <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="relative aspect-[1/1] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
         <div class="absolute inset-0 flex items-center justify-center">
         <div className="w-full rounded-lg">
         <img
@@ -360,7 +360,7 @@ const Growtopia = () => {
                   <span className="text-3xl font-bold text-gray-500">RP.75.000</span>
                   {0 === 1 ? (
                     <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                      Out of Stock
+                      Buy Now
                     </button>
                   ) : (
                     <Link to="/cpp-source">
@@ -378,7 +378,7 @@ const Growtopia = () => {
 
    <h2 className="text-2xl mt-5 mb-3 text-blue-800 flex font-bold">[Services] <span className="mx-2 text-gray-700">Coding Services</span></h2>
   <div class="carousel scrollbar-hide flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-  <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+  <div class="relative aspect-[1/1] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
         <div class="inset-0 flex items-center justify-center">
         <div className="w-full rounded-lg">
         <img
@@ -429,7 +429,7 @@ const Growtopia = () => {
                   <span className="text-3xl font-bold text-gray-500">RP.20.000</span>
                   {0 === 1 ? (
                     <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                      Out of Stock
+                    Buy Now
                     </button>
                   ) : (
                     <Link to="/fix-or-add-code">
@@ -445,7 +445,7 @@ const Growtopia = () => {
       </div>
 
 
-      <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="relative aspect-[1/1] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
         <div class="absolute inset-0 flex items-center justify-center">
         <div className="w-full rounded-lg">
         <img
@@ -496,7 +496,7 @@ const Growtopia = () => {
                   <span className="text-3xl font-bold text-gray-500">RP.20.000</span>
                   {0 === 1 ? (
                     <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                      Out of Stock
+                     Buy Now
                     </button>
                   ) : (
                     <Link to="/fix-failed">
@@ -510,7 +510,7 @@ const Growtopia = () => {
   </div>
         </div>
       </div>
-      <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+      <div class="relative aspect-[1/1] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
         <div class="absolute inset-0 flex items-center justify-center">
         <div className="w-full rounded-lg">
         <img
@@ -561,7 +561,7 @@ const Growtopia = () => {
                   <span className="text-3xl font-bold text-gray-500">RP.50.000</span>
                   {0 === 1 ? (
                     <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                      Out of Stock
+                      Buy Now
                     </button>
                   ) : (
                     <Link to="/become-your-coder">
