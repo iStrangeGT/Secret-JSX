@@ -145,7 +145,7 @@ const Indo9GB = () => {
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.8 }}
       >
-          <div className="bg-white/70 rounded-lg shadow-lg p-6 w-96">
+          <div className="bg-white/90 rounded-lg shadow-lg p-6 w-96">
             <h2 className="text-xl font-bold mb-4 text-blue-800">Order Details</h2>
             <div className="text-gray-600">
             <p className="mb-2">Product: VPS/RDP 9GB 5vCORE</p>

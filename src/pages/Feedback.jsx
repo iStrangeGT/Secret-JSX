@@ -35,8 +35,17 @@ const Feedback = () => {
    
     { name: "Settings", link: "/error", icon: RiSettings4Line },
   ];
+  
+  const [open, setOpen] = useState(() => {
+    const savedState = localStorage.getItem("sidebarOpen");
+    return savedState === "true"; // Konversi string ke boolean
+  });
 
-  const [open, setOpen] = useState(true);
+  // Simpan status sidebar ke localStorage setiap kali berubah
+  useEffect(() => {
+    localStorage.setItem("sidebarOpen", open);
+  }, [open]);
+  
     const [popupData, setPopupData] = useState(null);
 
   

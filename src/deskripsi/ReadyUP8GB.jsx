@@ -70,7 +70,7 @@ const ReadyUP8GB = () => {
               <p>- BandWidth 6TB</p>
               <p>- Intel Premium Processor</p>
               <p>- Active 28 - 30 Day</p>
-              <p>- Guarantee 5 Day 1x Replace</p>
+              <p>- Guarantee 5 Day No Replace</p>
               <p>- Free Coder 1Week</p>
             </p>
             <p class="mb-6 text-gray-500 ">
@@ -100,7 +100,7 @@ const ReadyUP8GB = () => {
          animate={{ opacity: 1, scale: 1 }}
          exit={{ opacity: 0, scale: 0.8 }}
        >
-          <div className="bg-white/70 rounded-lg shadow-lg p-6 w-96">
+          <div className="bg-white/90 rounded-lg shadow-lg p-6 w-96">
             <h2 className="text-xl font-bold mb-4 text-blue-800">Order Details</h2>
             <div className="text-gray-600">
               <p className="mb-2">Product: VPS/RDP 8GB With Good CPP</p>

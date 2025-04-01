@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HiMenuAlt3, HiOutlineDocumentDuplicate} from "react-icons/hi";
 import { MdOutlineDashboard } from "react-icons/md";
 import { RiSettings4Line } from "react-icons/ri";
@@ -18,7 +18,16 @@ const Dashboard = () => {
     { name: "Settings", link: "/error", icon: RiSettings4Line },
   ];
 
-  const [open, setOpen] = useState(true);
+  
+  const [open, setOpen] = useState(() => {
+    const savedState = localStorage.getItem("sidebarOpen");
+    return savedState === "true"; // Konversi string ke boolean
+  });
+
+  // Simpan status sidebar ke localStorage setiap kali berubah
+  useEffect(() => {
+    localStorage.setItem("sidebarOpen", open);
+  }, [open]);
 
   return (
     <div className="flex min-h-screen overflow-hidden">
