@@ -114,7 +114,7 @@ const Home = () => {
                       <span>Free Update Until Subscriptions Over</span>
                   </li>
               </ul>
-              <Link to="/" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-semibold rounded-lg text-lg px-5 py-2.5 mt-16 text-center">BUY PLAN</Link>
+              <Link to="/growtopia" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-semibold rounded-lg text-lg px-5 py-2.5 mt-16 text-center">BUY PLAN</Link>
           </div>
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center  text-blue-800  bg-white/50 rounded-lg border border-gray-100 shadow">
               <h3 class="mb-4 text-4xl  font-semibold">Better</h3>

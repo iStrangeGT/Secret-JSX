@@ -19,7 +19,8 @@ import Feedback from "./pages/Feedback";
 import Payment from "./pages/Payment";
 import ReadyUP8GB from "./deskripsi/ReadyUP8GB";
 import ReadyUP16GB from "./deskripsi/ReadyUP16GB";
-
+import CPPCore from "./deskripsi/CPPCore";
+import CPPSource from "./deskripsi/CPPSource";
 
 
 const App = () => {
@@ -47,7 +48,8 @@ const App = () => {
         <Route path="/payment" element={<Payment />} />
         <Route path="/readyup-8GB" element={<ReadyUP8GB />} />
         <Route path="/readyup-16GB" element={<ReadyUP16GB />} />
-       
+        <Route path="/cpp-core" element={<CPPCore />} />
+        <Route path="/cpp-source" element={<CPPSource />} />
         
       </Routes>
     </div>
