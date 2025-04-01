@@ -315,7 +315,7 @@ const Growtopia = () => {
         <img
     className="p-8 rounded-t-lg"
     src="./growtopialogo.png"
-    alt="gtps"
+    alt="gtpsx"
   />
     <div className="px-5 pb-5">
       
