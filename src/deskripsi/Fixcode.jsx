@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const CPPSource = () => {
+const Fixcode = () => {
   const [showModal, setShowModal] = useState(false);
 
   const handleBuyNow = () => {
     const orderDetails = {
-      productName: "GTPS CPP Core + Source",
-      price: "RP.70.000",
+      productName: "Fix Code / Add Code GTPS",
+      price: "RP.20.000",
     };
     localStorage.setItem("orderDetails", JSON.stringify(orderDetails));
     setShowModal(true);
@@ -28,10 +28,10 @@ const CPPSource = () => {
 
           <div className="mt-6 sm:mt-8 lg:mt-0">
             <h1 className="text-xl font-semibold text-blue-800 sm:text-2xl">
-              [CPP] <span className="text-gray-500">GTPS CPP Core + Source</span>
+              [Services] <span className="text-gray-500">Fix Code / Add Code GTPS</span>
             </h1>
             <div className="mt-4 sm:items-center sm:gap-4 sm:flex">
-              <p className="text-2xl font-extrabold text-gray-500 sm:text-3xl">RP.70.000</p>
+              <p className="text-2xl font-extrabold text-gray-500 sm:text-3xl">RP.20.000</p>
             </div>
 
             <div className="mt-4 sm:gap-4 sm:items-center sm:flex sm:mt-8">
@@ -81,8 +81,8 @@ const CPPSource = () => {
           <div className="bg-white/90 rounded-lg shadow-lg p-6 w-96">
             <h2 className="text-xl font-bold mb-4 text-blue-800">Order Details</h2>
             <div className="text-gray-600">
-              <p className="mb-2">GTPS CPP Core + Source</p>
-              <p className="mb-3">Price: RP.70.000</p>
+              <p className="mb-2">Fix Code / Add Code GTPS</p>
+              <p className="mb-3">Price: RP.20.000</p>
             </div>
             <div className="flex justify-between">
               <button
@@ -127,4 +127,4 @@ const CPPSource = () => {
   );
 };
 
-export default CPPSource;
+export default Fixcode;

@@ -103,7 +103,7 @@ const Products = () => {
       <div class="relative flex min-h-screen flex-col mt-5">
       <h2 className="text-2xl mt-5 mb-3 text-blue-400 flex font-bold">[DigitalOcean] <span className="mx-2 text-gray-700">VPS/RDP Packet 1</span></h2>
   <div class="carousel scrollbar-hide flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-  <div class="relative aspect-[1/1] w-[100%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+  <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
   <img
@@ -171,7 +171,7 @@ const Products = () => {
       </div>
     </div>
 
-    <div class="relative aspect-[1/1] w-[100%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
   <img
@@ -238,7 +238,7 @@ const Products = () => {
     </div>
 
 
-    <div class="relative aspect-[1/1] w-[100%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
   <img
@@ -308,7 +308,7 @@ const Products = () => {
 
   
   <div class="carousel scrollbar-hide flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-  <div class="relative aspect-[1/1] w-[100%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+  <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
   <img
@@ -375,7 +375,7 @@ const Products = () => {
     </div>
 
 
-    <div class="relative aspect-[1/1] w-[100%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
   <img
@@ -445,7 +445,7 @@ const Products = () => {
 
    <h2 className="text-2xl mt-5 mb-3 text-red-600 flex font-bold">[IndonesiaRegion] <span className="mx-2 text-gray-700">VPS/RDP</span></h2>
   <div class="carousel flex w-full  snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-  <div class="relative aspect-[1/1] w-[100%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+  <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
   <img
@@ -456,7 +456,7 @@ const Products = () => {
   <div className="px-5 pb-5">
     
  <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-                <span className="text-red-600">[IndonesiaRegion]</span> VPS/RDP 9GB 5vCORE {0 === 0 ? <span className="text-red-600">[Out of Stock]</span> : null}
+                <span className="text-red-600">[IndonesiaRegion]</span> VPS/RDP Legal 9GB {0 === 0 ? <span className="text-red-600">[Out of Stock]</span> : null}
               </h5>
                  
     <div className="flex items-center mt-2.5 ">
@@ -513,7 +513,7 @@ const Products = () => {
 
 
 
-    <div class="relative aspect-[1/1] w-[100%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
       <img
@@ -524,7 +524,7 @@ const Products = () => {
   <div className="px-5 pb-5">
     
  <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-                <span className="text-red-600">[IndonesiaRegion]</span> VPS/RDP 17GB 7vCORE {0 === 0 ? <span className="text-red-600">[Out of Stock]</span> : null}
+                <span className="text-red-600">[IndonesiaRegion]</span> VPS/RDP Legal 17GB {0 === 0 ? <span className="text-red-600">[Out of Stock]</span> : null}
               </h5>
                  
     <div className="flex items-center mt-2.5 ">
@@ -578,7 +578,7 @@ const Products = () => {
 </div>
       </div>
     </div>
-    <div class="relative aspect-[1/1] w-[100%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
       <img
@@ -589,7 +589,7 @@ const Products = () => {
   <div className="px-5 pb-5">
     
  <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-                <span className="text-red-600">[IndonesiaRegion]</span> VPS/RDP 31GB 9vCORE {0 === 0 ? <span className="text-red-600">[Out of Stock]</span> : null}
+                <span className="text-red-600">[IndonesiaRegion]</span> VPS/RDP Legal 31GB {0 === 0 ? <span className="text-red-600">[Out of Stock]</span> : null}
               </h5>
                  
     <div className="flex items-center mt-2.5 ">
@@ -643,7 +643,7 @@ const Products = () => {
 </div>
       </div>
     </div>
-    <div class="relative aspect-[1/1] w-[100%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
+    <div class="relative aspect-[1/1] w-[95%] shrink-0 snap-start snap-always rounded-xl bg-white/70 md:w-[calc(33.33%-(32px/3))]">
       <div class="absolute inset-0 flex items-center justify-center">
       <div className="w-full rounded-lg">
       <img
@@ -654,7 +654,7 @@ const Products = () => {
   <div className="px-5 pb-5">
     
  <h5 className="text-xl font-semibold tracking-tight text-gray-500">
-                <span className="text-red-600">[IndonesiaRegion]</span> VPS/RDP 61GB 11vCORE {0 === 0 ? <span className="text-red-600">[Out of Stock]</span> : null}
+                <span className="text-red-600">[IndonesiaRegion]</span> VPS/RDP Legal 61GB {0 === 0 ? <span className="text-red-600">[Out of Stock]</span> : null}
               </h5>
                  
     <div className="flex items-center mt-2.5 ">

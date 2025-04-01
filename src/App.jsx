@@ -21,7 +21,9 @@ import ReadyUP8GB from "./deskripsi/ReadyUP8GB";
 import ReadyUP16GB from "./deskripsi/ReadyUP16GB";
 import CPPCore from "./deskripsi/CPPCore";
 import CPPSource from "./deskripsi/CPPSource";
-
+import Fixcode from "./deskripsi/Fixcode";
+import Fixfailed from "./deskripsi/Fixfailed";
+import Becomecoder from "./deskripsi/Becomecoder";
 
 const App = () => {
   return (
@@ -50,6 +52,9 @@ const App = () => {
         <Route path="/readyup-16GB" element={<ReadyUP16GB />} />
         <Route path="/cpp-core" element={<CPPCore />} />
         <Route path="/cpp-source" element={<CPPSource />} />
+        <Route path="/fix-or-add-code" element={<Fixcode />} />
+        <Route path="/fix-failed" element={<Fixfailed />} />
+        <Route path="/become-your-coder" element={<Becomecoder/>} />
         
       </Routes>
     </div>
