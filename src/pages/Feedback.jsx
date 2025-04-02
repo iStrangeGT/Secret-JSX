@@ -7,7 +7,8 @@ import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare, FiServer, FiHome, FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { SiGamejolt } from "react-icons/si";
+import { BsChatLeftQuote } from "react-icons/bs";
 const comments = [
   {
     id: 1,
@@ -30,10 +31,10 @@ const Feedback = () => {
     { name: "Dashboard", link: "/dashboard", icon: FiHome },
     { name: "Testimoni", link: "/testimoni", icon: HiOutlineDocumentDuplicate },
     { name: "Products", link: "/products", icon: FiShoppingCart },
-    { name: "Growtopia", link: "/growtopia", icon: FiServer },
+    { name: "Growtopia", link: "/growtopia", icon: SiGamejolt },
     { name: "Feedback", link: "/feedback", icon: FiMessageSquare },
    
-    { name: "Settings", link: "/error", icon: RiSettings4Line },
+     { name: "FAQ", link: "/faq", icon: BsChatLeftQuote },
   ];
   
   const [open, setOpen] = useState(() => {

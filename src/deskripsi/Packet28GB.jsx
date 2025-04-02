@@ -7,7 +7,7 @@ const Packet28GB = () => {
   const [showModal, setShowModal] = useState(false);
   const [warning, setWarning] = useState(false);
   const operatingSystems = {
-    Windows: ["Windows Server 2010", "Windows Server 2011", "Windows Server 2012 R2", "Windows Server 2016", "Windows Server 2019","Windows Server 2022"],
+    Windows: ["Windows Server 2010", "Windows Server 2011", "Windows Server 2012 R2", "Windows Server 2016", "Windows Server 2019","Windows Server 2022"] ,
     Linux: ["AlmaLinux 8.x", "AlmaLinux 9.x", "Rocky Linux 8.x", "Rocky Linux 9.x"],
     Ubuntu: ["Ubuntu 24.10", "Ubuntu 24.04 LTS", "Ubuntu 22.04 LTS", "Ubuntu 20.04 LTS"],
     Debian: ["Debian 11 (Bullseye)", "Debian 12 (Bookworm)"],

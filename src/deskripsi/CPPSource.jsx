@@ -8,7 +8,7 @@ const CPPSource = () => {
   const handleBuyNow = () => {
     const orderDetails = {
       productName: "GTPS CPP Core + Source",
-      price: "RP.70.000",
+      price: "RP.75.000",
     };
     localStorage.setItem("orderDetails", JSON.stringify(orderDetails));
     setShowModal(true);
@@ -31,7 +31,7 @@ const CPPSource = () => {
               [CPP] <span className="text-gray-500">GTPS CPP Core + Source</span>
             </h1>
             <div className="mt-4 sm:items-center sm:gap-4 sm:flex">
-              <p className="text-2xl font-extrabold text-gray-500 sm:text-3xl">RP.70.000</p>
+              <p className="text-2xl font-extrabold text-gray-500 sm:text-3xl">RP.75.000</p>
             </div>
 
             <div className="mt-4 sm:gap-4 sm:items-center sm:flex sm:mt-8">
@@ -64,7 +64,11 @@ const CPPSource = () => {
 
             <p className="mb-6 text-gray-500">
               Description:
-
+              <p>With this source you able to update all off the features and access all of the features, if you have low budget you can buy core only. <span className="text-red-400">Core only cannot update the cpp features!</span>  </p>
+              <Link to="/cpp-core"><p className="text-blue-400 hover:text-blue-500"> buy the core click here!</p></Link>
+<p className="mt-2">Check all of the features here!:</p>
+<a href="https://discord.gg/uzf9W3YvMB" className="text-blue-400 hover:text-blue-500 hover:underline">https://discord.gg/uzf9W3YvMB</a>
+<p className="mt-2">*NOTE: GOT LEAKED? <span className="text-red-400">YOUR FAULT/NOT MY BUSINESS!⛔</span></p>
             </p>
 
 
@@ -82,7 +86,7 @@ const CPPSource = () => {
             <h2 className="text-xl font-bold mb-4 text-blue-800">Order Details</h2>
             <div className="text-gray-600">
               <p className="mb-2">GTPS CPP Core + Source</p>
-              <p className="mb-3">Price: RP.70.000</p>
+              <p className="mb-3">Price: RP.75.000</p>
             </div>
             <div className="flex justify-between">
               <button

@@ -106,22 +106,41 @@ const Payment = () => {
               <a
                 href={qrImage}
                 download={`${selectedPayment}-QR.jpg`}
-                className="block bg-gray-500 text-white py-2 px-4 rounded-lg text-center hover:bg-gray-600 mb-4"
+                className=" flex bg-gray-500 text-white py-2 px-16 rounded-lg text-center  hover:bg-gray-600 mb-4"
               >
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 3V16M12 16L8 12M12 16L16 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M4 19H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
                 Download QR
               </a>
               <a
                 href={whatsAppMessage}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-blue-800 text-white py-2 px-4 rounded-lg text-center hover:bg-blue-900 mb-4"
+                className="flex bg-green-500 text-white py-2 px-9 rounded-lg text-center hover:bg-green-600 mb-4"
               >
-                Confirm Your Payment
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className="mr-1"
+  >
+    <circle cx="12" cy="12" r="10" stroke="white" stroke-width="2" fill="white" />
+    <path d="M8 12L11 15L16 9" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>Confirm Your Payment
               </a>
               <button
                 onClick={closeModal}
-                className="bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 w-full"
+                className="bg-red-500 flex text-white py-2 px-24 rounded-lg hover:bg-red-600 w-full"
               >
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-1">
+  <circle cx="12" cy="12" r="10" stroke="white" stroke-width="2" fill="white"/>
+  <path d="M9 9L15 15" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M15 9L9 15" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
                 Close
               </button>
             </div>

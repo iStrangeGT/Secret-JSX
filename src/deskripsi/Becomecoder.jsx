@@ -23,7 +23,7 @@ const Becomecoder = () => {
       <div className="max-w-screen-xl px-4 mx-auto 2xl:px-0">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
           <div className="shrink-0 max-w-md lg:max-w-lg mx-auto">
-            <img className="w-full" src="./growtopialogo.png" alt="dawg" />
+            <img className="w-full" src="./cpp.png" alt="dawg" />
           </div>
 
           <div className="mt-6 sm:mt-8 lg:mt-0">

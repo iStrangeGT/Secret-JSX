@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const CPPCore = () => {
+const Hostingbasic = () => {
   const [showModal, setShowModal] = useState(false);
 
   const handleBuyNow = () => {
     const orderDetails = {
-      productName: "GTPS CPP Core Only",
-      price: "RP.35.000",
+      productName: "Best Hosting With 9GB 5vCore + Premium CPP",
+      price: "RP.250.000",
     };
     localStorage.setItem("orderDetails", JSON.stringify(orderDetails));
     setShowModal(true);
@@ -23,15 +23,15 @@ const CPPCore = () => {
       <div className="max-w-screen-xl px-4 mx-auto 2xl:px-0">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
           <div className="shrink-0 max-w-md lg:max-w-lg mx-auto">
-            <img className="w-full" src="./growtopialogo.png" alt="dawg" />
+            <img className="w-full" src="./hosting.png" alt="dawg" />
           </div>
 
           <div className="mt-6 sm:mt-8 lg:mt-0">
             <h1 className="text-xl font-semibold text-blue-800 sm:text-2xl">
-              [CPP] <span className="text-gray-500">GTPS CPP Core Only</span>
+              [Services] <span className="text-gray-500">Best Hosting With 9GB 5vCore + Premium CPP</span>
             </h1>
             <div className="mt-4 sm:items-center sm:gap-4 sm:flex">
-              <p className="text-2xl font-extrabold text-gray-500 sm:text-3xl">RP.35.000</p>
+              <p className="text-2xl font-extrabold text-gray-500 sm:text-3xl">RP.250.000</p>
             </div>
 
             <div className="mt-4 sm:gap-4 sm:items-center sm:flex sm:mt-8">
@@ -64,11 +64,7 @@ const CPPCore = () => {
 
             <p className="mb-6 text-gray-500">
               Description:
-              <p>This is core only not full source, you didnt able to update the feature when you only have core <span className="text-red-400">you must have have the source to update the features!</span>  </p>
-              <Link to="/cpp-source"><p className="text-blue-400 hover:text-blue-500"> buy the source click here!</p></Link>
-<p className="mt-2">Check all of the features here!:</p>
-<a href="https://discord.gg/uzf9W3YvMB" className="text-blue-400 hover:text-blue-500 hover:underline">https://discord.gg/uzf9W3YvMB</a>
-<p className="mt-2">*NOTE: GOT LEAKED? <span className="text-red-400">YOUR FAULT/NOT MY BUSINESS!⛔</span></p>
+
             </p>
 
 
@@ -85,8 +81,8 @@ const CPPCore = () => {
           <div className="bg-white/90 rounded-lg shadow-lg p-6 w-96">
             <h2 className="text-xl font-bold mb-4 text-blue-800">Order Details</h2>
             <div className="text-gray-600">
-              <p className="mb-2">GTPS CPP Core Only</p>
-              <p className="mb-3">Price: RP.35.000</p>
+              <p className="mb-2">Best Hosting With 9GB 5vCore + Premium CPP</p>
+              <p className="mb-3">Price: RP.250.000</p>
             </div>
             <div className="flex justify-between">
               <button
@@ -131,4 +127,4 @@ const CPPCore = () => {
   );
 };
 
-export default CPPCore;
+export default Hostingbasic;

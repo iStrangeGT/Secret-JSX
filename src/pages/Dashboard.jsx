@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from "react";
-import { HiMenuAlt3, HiOutlineDocumentDuplicate} from "react-icons/hi";
+import { HiMenuAlt3, HiOutlineDocumentDuplicate, HiOutlineChatAlt2} from "react-icons/hi";
 import { MdOutlineDashboard } from "react-icons/md";
 import { RiSettings4Line } from "react-icons/ri";
 import { TbReportAnalytics } from "react-icons/tb";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare, FiServer, FiHome, FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
-
+import { SiGamejolt } from "react-icons/si";
+import { BsChatLeftQuote } from "react-icons/bs";
 const Dashboard = () => {
   const menus = [
     { name: "Dashboard", link: "/dashboard", icon: FiHome },
     { name: "Testimoni", link: "/testimoni", icon: HiOutlineDocumentDuplicate },
     { name: "Products", link: "/products", icon: FiShoppingCart },
-    { name: "Growtopia", link: "/growtopia", icon: FiServer },
+    { name: "Growtopia", link: "/growtopia", icon: SiGamejolt },
     { name: "Feedback", link: "/feedback", icon: FiMessageSquare },
    
-    { name: "Settings", link: "/error", icon: RiSettings4Line },
+    { name: "FAQ", link: "/faq", icon: BsChatLeftQuote },
   ];
 
   
@@ -135,6 +136,7 @@ Growtopia At SECRETSTORE we provide source servers for growtopia private servers
     </div>
 </section>
 <h3 className="text-3xl mb-4 mt-8 text-gray-500 font-bold">SECRETSTORE's Platforms</h3>
+<a href="https://discord.gg/VGbjDAQ8">
 <button
   type="button"
   data-twe-ripple-init
@@ -151,6 +153,8 @@ Growtopia At SECRETSTORE we provide source servers for growtopia private servers
     </svg>
   </span>
 </button>
+</a>
+<a href="https://chat.whatsapp.com/DXqOtefyV8lAtM1AfapME5">
 <button
   type="button"
   data-twe-ripple-init
@@ -167,55 +171,8 @@ Growtopia At SECRETSTORE we provide source servers for growtopia private servers
     </svg>
   </span>
 </button>
-<h4 className="text-3xl mb-4 mt-8 text-gray-500 font-bold">OWNERS Contacts</h4>
-<button
-  type="button"
-  data-twe-ripple-init
-  data-twe-ripple-color="light"
-  class="mb-2 inline-block rounded bg-[#7289da] px-6 py-2.5 m-1 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
-  <span class="[&>svg]:h-4 [&>svg]:w-4">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="currentColor"
-      viewBox="0 0 640 512">
-      
-      <path
-        d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z" />
-    </svg>
-  </span>
-</button>
-<button
-  type="button"
-  data-twe-ripple-init
-  data-twe-ripple-color="light"
-  class="mb-2 inline-block rounded bg-[#128c7e] px-6 py-2.5 text-xs m-1 font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
-  <span class="[&>svg]:h-4 [&>svg]:w-4">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="currentColor"
-      viewBox="0 0 448 512">
-    
-      <path
-        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
-    </svg>
-  </span>
-</button>
-<button
-  type="button"
-  data-twe-ripple-init
-  data-twe-ripple-color="light"
-  class="mb-2 inline-block rounded bg-[#ff0000] px-6 py-2.5 text-xs m-1 font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
-  <span class="[&>svg]:h-4 [&>svg]:w-4">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="currentColor"
-      viewBox="0 0 576 512">
-     
-      <path
-        d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
-    </svg>
-  </span>
-</button>
+</a>
+<a href="https://t.me/SecretStoreReal">
 <button
   type="button"
   data-twe-ripple-init
@@ -232,6 +189,45 @@ Growtopia At SECRETSTORE we provide source servers for growtopia private servers
     </svg>
   </span>
 </button>
+</a>
+<h4 className="text-3xl mb-4 mt-8 text-gray-500 font-bold">OWNERS Contacts/Social Media</h4>
+<a href="https://wa.me/6288269956317">
+<button
+  type="button"
+  data-twe-ripple-init
+  data-twe-ripple-color="light"
+  class="mb-2 inline-block rounded bg-[#128c7e] px-6 py-2.5 text-xs m-1 font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
+  <span class="[&>svg]:h-4 [&>svg]:w-4">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      viewBox="0 0 448 512">
+    
+      <path
+        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+    </svg>
+  </span>
+</button>
+</a>
+<a href="https://youtube.com/@istrangegt?feature=shared">
+<button
+  type="button"
+  data-twe-ripple-init
+  data-twe-ripple-color="light"
+  class="mb-2 inline-block rounded bg-[#ff0000] px-6 py-2.5 text-xs m-1 font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
+  <span class="[&>svg]:h-4 [&>svg]:w-4">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      viewBox="0 0 576 512">
+     
+      <path
+        d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+    </svg>
+  </span>
+</button>
+</a>
+<a href="https://www.instagram.com/zarrhmnsyh?igsh=MWlmYmxkNG43b2hraw==">
 <button
   type="button"
   data-twe-ripple-init
@@ -248,7 +244,8 @@ Growtopia At SECRETSTORE we provide source servers for growtopia private servers
     </svg>
   </span>
 </button>
-
+</a>
+<a href="https://github.com/iStrangeGT">
 <button
   type="button"
   data-twe-ripple-init
@@ -265,6 +262,7 @@ Growtopia At SECRETSTORE we provide source servers for growtopia private servers
     </svg>
   </span>
 </button>
+</a>
 
         </main>
       </div>

@@ -24,6 +24,10 @@ import CPPSource from "./deskripsi/CPPSource";
 import Fixcode from "./deskripsi/Fixcode";
 import Fixfailed from "./deskripsi/Fixfailed";
 import Becomecoder from "./deskripsi/Becomecoder";
+import Hostingbasic from "./deskripsi/Hostingbasic";
+import Hostingbetter from "./deskripsi/Hostingbetter";
+import Hostingbest from "./deskripsi/Hostingbest";
+
 
 const App = () => {
   return (
@@ -55,6 +59,9 @@ const App = () => {
         <Route path="/fix-or-add-code" element={<Fixcode />} />
         <Route path="/fix-failed" element={<Fixfailed />} />
         <Route path="/become-your-coder" element={<Becomecoder/>} />
+        <Route path="/hosting-basic" element={<Hostingbasic/>} />
+        <Route path="/hosting-better" element={<Hostingbetter/>} />
+        <Route path="/hosting-best" element={<Hostingbest/>} />
         
       </Routes>
     </div>

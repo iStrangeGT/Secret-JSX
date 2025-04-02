@@ -6,16 +6,17 @@ import { TbReportAnalytics } from "react-icons/tb";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare, FiServer, FiHome, FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
-
+import { SiGamejolt } from "react-icons/si";
+import { BsChatLeftQuote } from "react-icons/bs";
 const Testimoni= () => {
   const menus = [
     { name: "Dashboard", link: "/dashboard", icon: FiHome },
     { name: "Testimoni", link: "/testimoni", icon: HiOutlineDocumentDuplicate },
     { name: "Products", link: "/products", icon: FiShoppingCart },
-    { name: "Growtopia", link: "/growtopia", icon: FiServer },
+    { name: "Growtopia", link: "/growtopia", icon: SiGamejolt },
     { name: "Feedback", link: "/feedback", icon: FiMessageSquare },
    
-    { name: "Settings", link: "/error", icon: RiSettings4Line },
+    { name: "FAQ", link: "/faq", icon: BsChatLeftQuote },
  
   ];
   
@@ -100,7 +101,7 @@ const Testimoni= () => {
           <h1 className="text-5xl mt-8 text-blue-800 font-bold">SECRETSTORE's Testimonials</h1>
           <p className="text-gray-500 mt-2">I only show a few testimonials, if you want to see more testimonials, please join one of the platforms below.
           </p>
-          <p className="text-gray-500 text-xl mt-3">Testimonials Count: <span className="text-blue-800">49</span>
+          <p className="text-gray-500 text-xl mt-3">Testimonials Count: <span className="text-blue-800">46</span>
           </p>
           <div class="relative flex min-h-screen flex-col mt-5">
   <div class="carousel flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
@@ -153,7 +154,8 @@ const Testimoni= () => {
     </div>
     </div>
     <div>
-    <h3 className="text-3xl mt-5 text-gray-500 font-bold">SECRETSTORE's Platforms</h3>
+    <h3 className="text-3xl mb-4 mt-8 text-gray-500 font-bold">SECRETSTORE's Platforms</h3>
+<a href="https://discord.gg/VGbjDAQ8">
 <button
   type="button"
   data-twe-ripple-init
@@ -170,6 +172,8 @@ const Testimoni= () => {
     </svg>
   </span>
 </button>
+</a>
+<a href="https://chat.whatsapp.com/DXqOtefyV8lAtM1AfapME5">
 <button
   type="button"
   data-twe-ripple-init
@@ -186,6 +190,25 @@ const Testimoni= () => {
     </svg>
   </span>
 </button>
+</a>
+<a href="https://t.me/SecretStoreReal">
+<button
+  type="button"
+  data-twe-ripple-init
+  data-twe-ripple-color="light"
+  class="mb-2 inline-block rounded bg-[#0088cc] px-6 py-2.5 text-xs m-1 font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
+  <span class="[&>svg]:h-4 [&>svg]:w-4">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      viewBox="0 0 496 512">
+   
+      <path
+        d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z" />
+    </svg>
+  </span>
+</button>
+</a>
     </div>
     </div>
 

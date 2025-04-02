@@ -6,17 +6,17 @@ import { TbReportAnalytics } from "react-icons/tb";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare, FiServer, FiHome, FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
-
-
+import { SiGamejolt } from "react-icons/si";
+import { BsChatLeftQuote } from "react-icons/bs";
 const Products = () => {
   const menus = [
     { name: "Dashboard", link: "/dashboard", icon: FiHome },
     { name: "Testimoni", link: "/testimoni", icon: HiOutlineDocumentDuplicate },
     { name: "Products", link: "/products", icon: FiShoppingCart },
-    { name: "Growtopia", link: "/growtopia", icon: FiServer },
+    { name: "Growtopia", link: "/growtopia", icon: SiGamejolt },
     { name: "Feedback", link: "/feedback", icon: FiMessageSquare },
    
-    { name: "Settings", link: "/error", icon: RiSettings4Line},
+    { name: "FAQ", link: "/faq", icon: BsChatLeftQuote },
   ];
   
   const [open, setOpen] = useState(() => {
@@ -79,7 +79,7 @@ const Products = () => {
       {/* Main Content */}
       <div className="flex-1 flex flex-col">
         {/* Navbar */}
-        <nav className="backdrop-blur-md bg-white/40 w-full">
+        <nav className="backdrop-blur-md bg-white/30 w-full">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">

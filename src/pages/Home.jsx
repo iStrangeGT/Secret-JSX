@@ -84,7 +84,7 @@ const Home = () => {
               <h3 class="mb-4 text-4xl font-semibold">Basic</h3>
               <p class="font-light px-3 text-cyan-500 sm:text-lg ">Recomended For You If You Have Low Budget.</p>
               <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-4xl  text-white font-extrabold">RP.300.000</span>
+                  <span class="mr-2 text-4xl  text-white font-extrabold">RP.250.000</span>
                   <span class="text-cyan-500 ">/month</span>
               </div>
               <ul role="list" class="mb-8  text-cyan-500 space-y-4 text-left">
