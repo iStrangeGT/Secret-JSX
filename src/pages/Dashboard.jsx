@@ -100,7 +100,7 @@ const Dashboard = () => {
         <main className="p-6  flex-1">
           {/* Add your page content here */}
 
-
+          
           <h1 className="text-5xl mt-8 text-blue-800 font-bold">Welcome to SECRETSTORE</h1>
           <p className="text-gray-500 mt-5"> Hi Customers!, We are here to provide a variety of server needs, such as game servers or web servers. We provide VPS, RDP, Growtopia Private Server Source, Coding Service, and more.</p>
           <h2 className="text-2xl text-center mt-16 text-blue-800 font-bold">Start Your Journey With SECRETSTORE</h2>
