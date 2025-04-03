@@ -27,6 +27,7 @@ import Becomecoder from "./deskripsi/Becomecoder";
 import Hostingbasic from "./deskripsi/Hostingbasic";
 import Hostingbetter from "./deskripsi/Hostingbetter";
 import Hostingbest from "./deskripsi/Hostingbest";
+import Faq from "./pages/Faq";
 
 
 const App = () => {
@@ -36,7 +37,7 @@ const App = () => {
       
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/home" element={<Dashboard />} />
         <Route path="/products" element={<Products />} />
         <Route path="/error" element={<Error />} />
         <Route path="/growtopia" element={<Growtopia />} />
@@ -62,6 +63,7 @@ const App = () => {
         <Route path="/hosting-basic" element={<Hostingbasic/>} />
         <Route path="/hosting-better" element={<Hostingbetter/>} />
         <Route path="/hosting-best" element={<Hostingbest/>} />
+        <Route path="/faq" element={<Faq/>} />
         
       </Routes>
     </div>

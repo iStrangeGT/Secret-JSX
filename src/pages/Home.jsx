@@ -1,56 +1,62 @@
 import { Link } from "react-router-dom";
-import React from "react";
+import { useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 
 const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
     return (
       <>
 
 
-     <nav className="fixed top-0 left-0 w-full backdrop-blur-md  bg-white/30  shadow-lg">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <img src="/pelr.png" alt="" />
-        <span className="p-4 font-extrabold text-3xl text-blue-800">SECRETSTORE
-        </span>
-            </div>
-            <div className="hidden md:flex items-center space-x-8">
+<nav className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 shadow-lg">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex items-center">
+            <img src="/pelr.png" alt="" />
+            <span className="p-4 font-extrabold text-3xl text-blue-800">SECRETSTORE</span>
+          </div>
           
-            <Link to="/testimoni" className="text-gray-600 text-sm hover:text-purple-600 transition duration-300">
-            Testimoni
-              </Link>
-              <Link to="/products" className="text-gray-600 text-sm  hover:text-purple-600 transition duration-300">
-                Products
-              </Link>
-              <Link to="/growtopia" className="text-gray-600 text-sm hover:text-purple-600 transition duration-300">
-                Growtopia
-              </Link>
-              <button className="px-4 py-2 rounded-full bg-blue-800 text-sm text-white hover:opacity-90 transition duration-300">
-  <Link to="/dashboard">Get Started</Link>
-</button>
-            </div>
-            <div className="md:hidden">
-              <button className="text-blue-800">
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M4 6h16M4 12h16M4 18h16"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                  />
-                </svg>
-              </button>
-            </div>
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            <Link to="/testimoni" className="text-gray-600 text-sm hover:text-purple-600 transition duration-300">Testimoni</Link>
+            <Link to="/products" className="text-gray-600 text-sm hover:text-purple-600 transition duration-300">Products</Link>
+            <Link to="/growtopia" className="text-gray-600 text-sm hover:text-purple-600 transition duration-300">Growtopia</Link>
+            <button className="px-4 py-2 rounded-full bg-blue-800 text-sm text-white hover:opacity-90 transition duration-300">
+              <Link to="/home">Get Started</Link>
+            </button>
+          </div>
+          
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <button onClick={() => setIsOpen(!isOpen)} className="text-blue-800">
+              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
           </div>
         </div>
-      </nav>
- 
+      </div>
+      
+      {/* Mobile Sidebar */}
+      <div className={`fixed top-0 right-0 w-full h-full bg-white/90 shadow-lg transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 md:hidden`}>
+        <div className="p-4 flex justify-between items-center">
+          <span className="font-extrabold text-2xl text-blue-800">SECRETSTORE</span>
+          <button onClick={() => setIsOpen(false)} className="text-blue-800">
+            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div className="flex bg-white/90 rounded-b-lg flex-col space-y-4 p-4">
+          <Link to="/testimoni" className="text-gray-600 text-sm hover:text-purple-600 transition duration-300">Testimoni</Link>
+          <Link to="/products" className="text-gray-600 text-sm hover:text-purple-600 transition duration-300">Products</Link>
+          <Link to="/growtopia" className="text-gray-600 text-sm hover:text-purple-600 transition duration-300">Growtopia</Link>
+          <button className="px-4 py-2 rounded-full bg-blue-800 text-sm text-white hover:opacity-90 transition duration-300 w-full">
+            <Link to="/home">Get Started</Link>
+          </button>
+        </div>
+      </div>
+    </nav>
 <div className=" mt-48 text-center">
 <h1 className="text-6xl font-extrabold text-blue-800">
   Welcome to SECRETSTORE!
@@ -66,7 +72,7 @@ const Home = () => {
 </div>
 <div className="flex justify-center items-center my-28 mt-14">
   <button className="px-12 py-2 rounded-full bg-blue-800 text-lg text-white hover:opacity-90 transition duration-300">
-  <Link to="/dashboard">Get Started</Link>
+  <Link to="/home">Get Started</Link>
   </button>
 </div>
 
@@ -150,7 +156,7 @@ const Home = () => {
                       <span>Free Update Until Subscriptions Over</span>
                   </li>
               </ul>
-              <Link to="/" class="text-blue-800 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-semibold rounded-lg text-lg px-5 py-2.5 mt-16 text-center">BUY PLAN</Link>
+              <Link to="/growtopia" class="text-blue-800 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-semibold rounded-lg text-lg px-5 py-2.5 mt-16 text-center">BUY PLAN</Link>
           </div>
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-blue-800 bg-white/50 rounded-lg border border-gray-100 shadow">
               <h3 class="mb-4 text-4xl font-semibold">Best</h3>
@@ -186,7 +192,7 @@ const Home = () => {
                       <span>Free Update Until Subscriptions Over</span>
                   </li>
               </ul>
-              <Link to="/" class="text-blue-800 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-semibold rounded-lg text-lg px-5 py-2.5 mt-16 text-center">BUY PLAN</Link> 
+              <Link to="/growtopia" class="text-blue-800 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-semibold rounded-lg text-lg px-5 py-2.5 mt-16 text-center">BUY PLAN</Link> 
           </div>
       </div>
   </div>

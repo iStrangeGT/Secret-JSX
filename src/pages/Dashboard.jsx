@@ -8,13 +8,16 @@ import { FiMessageSquare, FiServer, FiHome, FiShoppingCart } from "react-icons/f
 import { Link } from "react-router-dom";
 import { SiGamejolt } from "react-icons/si";
 import { BsChatLeftQuote } from "react-icons/bs";
+import { IoChatboxEllipsesOutline } from "react-icons/io5";
+import { TfiShoppingCartFull, TfiHome } from "react-icons/tfi";
+import { AiOutlineFileDone } from "react-icons/ai";
 const Dashboard = () => {
   const menus = [
-    { name: "Dashboard", link: "/dashboard", icon: FiHome },
-    { name: "Testimoni", link: "/testimoni", icon: HiOutlineDocumentDuplicate },
-    { name: "Products", link: "/products", icon: FiShoppingCart },
+    { name: "Home", link: "/home", icon: TfiHome },
+   { name: "Testimoni", link: "/testimoni", icon: AiOutlineFileDone },
+    { name: "Products", link: "/products", icon: TfiShoppingCartFull },
     { name: "Growtopia", link: "/growtopia", icon: SiGamejolt },
-    { name: "Feedback", link: "/feedback", icon: FiMessageSquare },
+   { name: "Feedback", link: "/feedback", icon: IoChatboxEllipsesOutline },
    
     { name: "FAQ", link: "/faq", icon: BsChatLeftQuote },
   ];

@@ -8,14 +8,17 @@ import { FiMessageSquare, FiServer, FiHome, FiShoppingCart } from "react-icons/f
 import { Link } from "react-router-dom";
 import { GoInfinity } from "react-icons/go";
 import { SiGamejolt } from "react-icons/si";
+import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import { BsChatLeftQuote } from "react-icons/bs";
+import { TfiShoppingCartFull, TfiHome } from "react-icons/tfi";
+import { AiOutlineFileDone } from "react-icons/ai";
 const Growtopia = () => {
   const menus = [
-    { name: "Dashboard", link: "/dashboard", icon: FiHome },
-    { name: "Testimoni", link: "/testimoni", icon: HiOutlineDocumentDuplicate },
-    { name: "Products", link: "/products", icon: FiShoppingCart },
+    { name: "Home", link: "/home", icon: TfiHome },
+     { name: "Testimoni", link: "/testimoni", icon: AiOutlineFileDone },
+    { name: "Products", link: "/products", icon: TfiShoppingCartFull },
     { name: "Growtopia", link: "/growtopia", icon: SiGamejolt},
-    { name: "Feedback", link: "/feedback", icon: FiMessageSquare },
+   { name: "Feedback", link: "/feedback", icon: IoChatboxEllipsesOutline },
    
      { name: "FAQ", link: "/faq", icon: BsChatLeftQuote },
   ];
@@ -148,13 +151,13 @@ const Growtopia = () => {
           4.0
         </span>
         <span className=" text-gray-500 bg-blue-100 text-sm font-semibold px-2.5 py-0.5 rounded-sm ms-3">
-         Slot: 0/5
+         Slot: 0/0
         </span>
       </div>
              
                 <div className="flex items-center justify-between mt-2.5">
                   <span className="text-3xl font-bold text-gray-500">RP.100.000</span>
-                  {0 === 1 ? (
+                  {0 === 0 ? (
                     <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                       Buy Now
                     </button>
@@ -215,13 +218,13 @@ const Growtopia = () => {
           4.5
         </span>
         <span className=" text-gray-500 bg-blue-100 text-sm font-semibold px-2.5 py-0.5 rounded-sm ms-3">
-         Slot: 0/5
+         Slot: 0/0
         </span>
       </div>
              
                 <div className="flex items-center justify-between mt-2.5">
                   <span className="text-3xl font-bold text-gray-500">RP.150.000</span>
-                  {0 === 1 ? (
+                  {0 === 0 ? (
                     <button className="text-white bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                       Buy Now
                     </button>
